@@ -1,3 +1,5 @@
+> SUPERSEDED by `INDEX.md` (repo-level map; the canonical files now live at the repository root) — kept pending owner decision.
+
 # Lab package proposal (2026-11-03) — DRAFT
 
 Status: **DRAFT proposal. Nothing in this directory is active or adopted.**

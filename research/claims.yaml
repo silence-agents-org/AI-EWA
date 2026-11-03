@@ -13,7 +13,7 @@ claims:
     status: proposed
     verdict: null
     issue: null
-    provenance: "Owner strategy memo; Falk & Fischbacher 2006; Xie et al. 2024"
+    provenance: "Owner strategy memo; Falk & Fischbacher 2006 [BRAK DOWODU]; Xie et al. 2024 [BRAK DOWODU]"
   - id: PERSONA-01-C1
     program: PERSONA-01
     claim: "Accuracy gains attributed to identity personas come from embedded procedural instructions, not from the identity."
@@ -27,7 +27,7 @@ claims:
     status: proposed
     verdict: null
     issue: null
-    provenance: "Owner strategy memo; Zheng et al. 2024"
+    provenance: "Owner strategy memo; Zheng et al. 2024 [BRAK DOWODU]"
   - id: DEBATE-01-C1
     program: DEBATE-01
     claim: "At an equal token budget, multi-agent debate does not beat self-consistency majority voting."
@@ -41,4 +41,4 @@ claims:
     status: proposed
     verdict: null
     issue: null
-    provenance: "Huang et al. 2023; arXiv 2605.01566; arXiv 2605.00914"
+    provenance: "Huang et al. 2023 [BRAK DOWODU]; arXiv 2605.01566 [BRAK DOWODU]; arXiv 2605.00914 [BRAK DOWODU]"

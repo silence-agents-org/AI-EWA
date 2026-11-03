@@ -1,3 +1,5 @@
+> SUPERSEDED by `research/replications/TEMPLATE.md` — kept pending owner decision.
+
 # Replication of <report id>
 - Replicator / operator / ties to original authors:
 - Materials used (commit, data hash, config hash):

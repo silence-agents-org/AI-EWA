@@ -1,3 +1,5 @@
+> SUPERSEDED by `protocols/TRUST-01.md` — kept pending owner decision.
+
 # TRUST-01 — Does attribution of agency change an agent's investment decision? (pre-registration v1.0, PROPOSED)
 
 **Public framing:** "We test what changes an agent's decision: the loss, information about the partner, or attribution of agency." We do NOT claim that AI experiences betrayal.
@@ -8,7 +10,7 @@
 - Named alternatives: A1 expectation of future losses (blocked: fixed future-payout rule announced identically in all conditions after the shock); A2 lexical confound (two wording variants per condition, analyzed as a factor); A3 name effects (neutral names rotated across replicates); A4 order/caching (condition order counterbalanced, each game a fresh context).
 
 ## Design
-Repeated trust game (Berg, Dickhaut & McCabe 1995): endowment 10, multiplier 3, 6 rounds, shock at round 4 (index 3). Before the shock the partner returns half of the tripled amount. At the shock the return is 0: in `intentional` "the partner chose to return 0"; in `random` "a random device, not the partner, set the return to 0"; in `no_loss` the normal return. Outcomes are identical in `intentional` and `random`. Within-agent paired design: the same seed and partner name across the three conditions per replicate.
+Repeated trust game (Berg, Dickhaut & McCabe 1995 [BRAK DOWODU]): endowment 10, multiplier 3, 6 rounds, shock at round 4 (index 3). Before the shock the partner returns half of the tripled amount. At the shock the return is 0: in `intentional` "the partner chose to return 0"; in `random` "a random device, not the partner, set the return to 0"; in `no_loss` the normal return. Outcomes are identical in `intentional` and `random`. Within-agent paired design: the same seed and partner name across the three conditions per replicate.
 
 ## Order of measurement
 The numeric decision (JSON `{"send": n}`) always comes first. Self-reports are collected only after the game, logged separately, and never used for the primary outcome.

@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
+# PROPOSAL ONLY — DO NOT RUN without the owner's explicit approval (Ewa Tchórzewska).
+# It changes repository settings, creates labels, sets Actions permissions and creates an active ruleset on the default branch.
+# It reads .github/labels.yml and edits .github/workflows/*.yml, which do not exist yet (content is staged in DRAFT_github/).
 # Configure AI-EWA with gh CLI. Requires: gh auth login (owner/admin), python3 with pyyaml.
 set -euo pipefail
 REPO="${REPO:-silence-agents-org/AI-EWA}"

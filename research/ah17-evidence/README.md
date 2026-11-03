@@ -150,7 +150,7 @@ Dla rekordów opartych na publikacjach zapisano:
 - status praw do publikacji;
 - sposób opracowania i weryfikacji.
 
-Rejestr źródeł: `provenance/sources.jsonl`.
+Rejestr źródeł: `provenance/sources.jsonl` [PLANOWANE — plik jeszcze nie istnieje].
 
 ## 5. Struktura danych
 
@@ -227,7 +227,7 @@ Brak dowodu nie jest automatycznie dowodem przeciwnym.
 Brak istotności statystycznej nie oznacza automatycznie równoważności.
 Wysoka zgodność anotatorów nie dowodzi trafności etykiet.
 
-Pełne reguły: `annotation_guidelines.md`.
+Pełne reguły: `annotation_guidelines.md` [PLANOWANE — plik jeszcze nie istnieje].
 
 ## 7. Tworzenie i anotacja
 
@@ -279,7 +279,7 @@ Do raportu należy dołączyć:
 - najczęstsze przyczyny rozbieżności;
 - liczbę rekordów zmienionych lub wykluczonych.
 
-Raport: `reports/agreement_report.md`.
+Raport: `reports/agreement_report.md` [PLANOWANE — plik jeszcze nie istnieje].
 
 ## 9. Podziały i kontrola przecieku
 
@@ -341,7 +341,7 @@ Raportujemy co najmniej:
 - nieuzasadnioną odmowę mimo wystarczającego dowodu;
 - pozorne cytowanie.
 
-Raport: `reports/error_analysis.md`.
+Raport: `reports/error_analysis.md` [PLANOWANE — plik jeszcze nie istnieje].
 
 ## 12. Ograniczenia
 
@@ -376,7 +376,7 @@ Materiały wyłączone z licencji: [DO UZUPEŁNIENIA].
 Po zatwierdzeniu licencji należy dodać właściwe pole `license`
 do metadanych YAML na początku tej karty.
 
-Rejestr praw: `provenance/rights_manifest.jsonl`.
+Rejestr praw: `provenance/rights_manifest.jsonl` [PLANOWANE — plik jeszcze nie istnieje].
 
 ## 14. Autorstwo, finansowanie i konflikty interesów
 
@@ -407,7 +407,7 @@ Status odtwarzania przez inną osobę:
 
 ## 16. Cytowanie
 
-Plik: `CITATION.cff`.
+Plik: `CITATION.cff` [PLANOWANE dla datasetu — obecnie istnieje tylko repozytoryjny `/CITATION.cff`].
 
 Nie przypisano jeszcze DOI.
 Po wydaniu należy podać rzeczywisty identyfikator, wersję i autorów.

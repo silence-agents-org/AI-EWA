@@ -1,6 +1,6 @@
 # Governance
 
-**Maintainer:** OWNER_HANDLE (final decision). Additional maintainers are listed in `.github/CODEOWNERS`.
+**Maintainer:** OWNER_HANDLE (final decision). Additional maintainers are listed in `.github/CODEOWNERS` (not active yet; staged at `DRAFT_github/CODEOWNERS`).
 
 ## Decisions
 Accept · Request changes · Reject · Defer. Each decision on a result, a run approval, a budget change or a transfer to SILENCE is logged in `governance/decision-log.md` with date, item, decision, reason, and conflicts of interest.

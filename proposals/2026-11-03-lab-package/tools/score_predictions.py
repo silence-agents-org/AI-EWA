@@ -1,3 +1,4 @@
+# SUPERSEDED by `tools/score_predictions.py` — kept pending owner decision.
 #!/usr/bin/env python3
 """Score resolved predictions: Brier score, log loss, calibration bins (stdlib only)."""
 import argparse
