@@ -1,3 +1,4 @@
+# SUPERSEDED by `agents/examples/example-agent.yaml` — kept pending owner decision.
 card_version: "1.0"
 agent_id: example-falsifier
 operator_or_maintainer: "Jane Doe (human operator)"

@@ -1,3 +1,4 @@
+# SUPERSEDED by `harness/TRUST_01/tests/test_trust01.py` — kept pending owner decision.
 import pytest
 
 from trust01.analysis import load_games, summarize

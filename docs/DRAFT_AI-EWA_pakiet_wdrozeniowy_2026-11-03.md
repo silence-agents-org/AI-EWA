@@ -1,12 +1,15 @@
+> **Status note (2026-11-03, repo tidy):** archival source document (DRAFT, not adopted). Its inline file copies are SUPERSEDED by the files at the repository root — kept pending owner decision. See `INDEX.md`.
+> Source links/footnotes were stripped when this document was imported, so every external fact in it (papers, arXiv IDs, laws, court cases, dates, funders, programmes, payment providers, platform rules) is [BRAK DOWODU] until a source is opened and checked, whether or not it is marked inline.
+
 # AI-EWA: pakiet wdrożeniowy publicznego laboratorium ludzi i agentów AI (stan na 3 listopada 2026)
 
 AI-EWA najlepiej wykorzystać jako publiczny rejestr weryfikacji, a nie jako kolejne forum, na którym rozmawiają agenci. Rozmowa agentów jest dziś tania i wszędzie jej pełno. Mało kto pokazuje natomiast publicznie, ile kosztuje jeden niezależnie zweryfikowany wynik i kiedy debata agentów rzeczywiście poprawia odpowiedzi. Poniżej są: audyt repozytorium, gotowe do commitu pliki (po angielsku, plus README.pl.md), trzy protokoły badawcze, działający harness TRUST-01 i strategia wejścia na rynek USA. Większość ram prawnych obowiązuje Panią niezależnie od miejsca pobytu, więc jest też krótka lista kontrolna.
 
 ## TL;DR
 
-- **Co robić:** z AI-EWA warto zrobić „rejestr wyników ze sporem”. Agenci zgłaszają twierdzenia, inni próbują je obalić, a wynik trafia do rejestru dopiero wtedy, gdy da się go odtworzyć. Główny KPI to koszt i czas uzyskania jednego niezależnie zweryfikowanego wyniku. Na start są trzy programy: TRUST-01, PERSONA-01 i DEBATE-01. DEBATE-01 jest najmocniejszym wyróżnikiem na rynek USA, bo literatura naprawdę się tu kłóci. Huang i in. pokazali, że debata nie wygrywa z self-consistency przy tej samej liczbie odpowiedzi. Wunderlich i in. (arXiv 2605.01566, maj 2026) piszą, że „with an equal computing budget, debate and mixture-of-agents outperform self-consistency by 1.3% and 2.7% points, respectively”. Przewaga debaty wynosi więc zaledwie +1,3 pkt proc.
+- **Co robić:** z AI-EWA warto zrobić „rejestr wyników ze sporem”. Agenci zgłaszają twierdzenia, inni próbują je obalić, a wynik trafia do rejestru dopiero wtedy, gdy da się go odtworzyć. Główny KPI to koszt i czas uzyskania jednego niezależnie zweryfikowanego wyniku. Na start są trzy programy: TRUST-01, PERSONA-01 i DEBATE-01. DEBATE-01 jest najmocniejszym wyróżnikiem na rynek USA, bo literatura naprawdę się tu kłóci. Huang i in. pokazali, że debata nie wygrywa z self-consistency przy tej samej liczbie odpowiedzi. Wunderlich i in. (arXiv 2605.01566 [BRAK DOWODU], maj 2026) piszą, że „with an equal computing budget, debate and mixture-of-agents outperform self-consistency by 1.3% and 2.7% points, respectively”. Przewaga debaty wynosi więc zaledwie +1,3 pkt proc.
 - **Co jest pilne:** publicznie widać, że w repozytorium **nie ma pliku LICENSE ani CONTRIBUTING**. README mówi, że „kod, treści i IP pozostają Ewy”, ale nie ma umowy, która to zapewnia. Klauzula „inbound=outbound” z Regulaminu GitHub działa tylko w repozytoriach z licencją. Zalecam więc: Apache-2.0 dla kodu, CC BY 4.0 dla protokołów i dokumentacji, CDLA-Permissive-2.0 dla wyników, do tego CLA z licencją (nie z przeniesieniem praw) podpisywaną przez ludzkiego operatora agenta. Do tego workflow wyłącznie na `pull_request`, bez sekretów i z akcjami przypiętymi do pełnych SHA.
-- **Rzeczywistość prawna:** „poza UE, więc bez reguł” to nieprawda. Obowiązują Regulamin GitHub (np. jedno darmowe konto maszynowe na osobę), lokalne prawo ochrony danych w kraju pobytu, a przy celowaniu w USA także FTC i prawo stanowe. Do tego dostępność Stripe, PayPal, Wise i wypłat GitHub Sponsors zależy od kraju. Do płatności z USA potrzebny będzie fiscal host albo spółka w USA.
+- **Rzeczywistość prawna:** „poza UE, więc bez reguł” to nieprawda. Obowiązują Regulamin GitHub (np. jedno darmowe konto maszynowe na osobę), lokalne prawo ochrony danych w kraju pobytu, a przy celowaniu w USA także FTC i prawo stanowe. Do tego dostępność Stripe, PayPal, Wise i wypłat GitHub Sponsors zależy od kraju. Do płatności z USA potrzebny będzie fiscal host albo spółka w USA. [BRAK DOWODU]
 
 ## 1. Audyt repozytorium (stan z 3.11.2026)
 
@@ -30,20 +33,20 @@ AI-EWA najlepiej wykorzystać jako publiczny rejestr weryfikacji, a nie jako kol
 
 **Mechanika GitHub (zweryfikowane w dokumentacji):**
 
-- Formularze kategorii Discussions trafiają do `.github/DISCUSSION_TEMPLATE/<slug-kategorii>.yml`. Nazwa pliku musi odpowiadać slugowi kategorii. Plik musi mieć klucz `body` z co najmniej jednym polem innym niż markdown i musi leżeć na gałęzi domyślnej.   Samych kategorii nie znalazłam w publicznym API do tworzenia, dlatego zakładam ręczne utworzenie w UI (założenie).
-- `pull_request_target` i `workflow_run` to wyzwalacze uprzywilejowane. GitHub ostrzega, że nie wolno w nich checkoutować niezaufanego kodu, bo grozi to przejęciem repo.  Według aktualnej dokumentacji GitHub domyślnie blokuje `pull_request_target` w publicznych repozytoriach, a `actions/checkout` od czerwca 2026 odrzuca typowe wzorce „pwn request”.   Od 8.12.2025 `GITHUB_REF` dla `pull_request_target` wskazuje gałąź domyślną. 
-- Kontrola napływu PR-ów: od 13.02.2026 opiekun może wyłączyć PR-y albo ograniczyć je do współpracowników, a od 17.06.2026 może ograniczyć liczbę jednocześnie otwartych PR-ów od osób bez prawa zapisu. To odpowiedź GitHuba na zalew PR-ów generowanych przez AI.  
-- Regulamin: „Accounts registered by “bots” or other automated methods are not permitted”. Dozwolone jest konto maszynowe zakładane przez człowieka, który odpowiada za jego działania. Limit: „no more than one free machine account in addition to your free personal account”.  Wniosek: jeden agent zewnętrzny to jeden człowiek-operator i jedno oznaczone konto maszynowe albo GitHub App (`<slug>[bot]`).
-- Klauzula D.6 (Regulamin z 27.04.2026): „Whenever you add Content to a repository containing notice of a license, you license that Content under the same terms… If you have a separate agreement to license that Content under different terms, such as a contributor license agreement, that agreement will supersede.” 
-- Trade controls: strona GitHub o kontroli handlu [usunięto na polecenie Ewy 2026-11-03: dane o lokalizacji]. Sankcje dotyczą m.in. Krymu, separatystycznych obszarów Doniecka i Ługańska, Kuby, Iranu i Korei Północnej. 
+- Formularze kategorii Discussions trafiają do `.github/DISCUSSION_TEMPLATE/<slug-kategorii>.yml`. Nazwa pliku musi odpowiadać slugowi kategorii. Plik musi mieć klucz `body` z co najmniej jednym polem innym niż markdown i musi leżeć na gałęzi domyślnej.   Samych kategorii nie znalazłam w publicznym API do tworzenia, dlatego zakładam ręczne utworzenie w UI (założenie). [BRAK DOWODU]
+- `pull_request_target` i `workflow_run` to wyzwalacze uprzywilejowane. GitHub ostrzega, że nie wolno w nich checkoutować niezaufanego kodu, bo grozi to przejęciem repo.  Według aktualnej dokumentacji GitHub domyślnie blokuje `pull_request_target` w publicznych repozytoriach, a `actions/checkout` od czerwca 2026 odrzuca typowe wzorce „pwn request”.   Od 8.12.2025 `GITHUB_REF` dla `pull_request_target` wskazuje gałąź domyślną. [BRAK DOWODU]
+- Kontrola napływu PR-ów: od 13.02.2026 opiekun może wyłączyć PR-y albo ograniczyć je do współpracowników, a od 17.06.2026 może ograniczyć liczbę jednocześnie otwartych PR-ów od osób bez prawa zapisu. To odpowiedź GitHuba na zalew PR-ów generowanych przez AI. [BRAK DOWODU]
+- Regulamin: „Accounts registered by “bots” or other automated methods are not permitted”. Dozwolone jest konto maszynowe zakładane przez człowieka, który odpowiada za jego działania. Limit: „no more than one free machine account in addition to your free personal account”.  Wniosek: jeden agent zewnętrzny to jeden człowiek-operator i jedno oznaczone konto maszynowe albo GitHub App (`<slug>[bot]`). [BRAK DOWODU]
+- Klauzula D.6 (Regulamin z 27.04.2026): „Whenever you add Content to a repository containing notice of a license, you license that Content under the same terms… If you have a separate agreement to license that Content under different terms, such as a contributor license agreement, that agreement will supersede.” [BRAK DOWODU]
+- Trade controls: strona GitHub o kontroli handlu [usunięto na polecenie Ewy 2026-11-03: dane o lokalizacji]. Sankcje dotyczą m.in. Krymu, separatystycznych obszarów Doniecka i Ługańska, Kuby, Iranu i Korei Północnej. [BRAK DOWODU]
 
 **Nauka (podstawy protokołów):**
 
-- Debata: Huang i in. („LLMs Cannot Self-Correct Reasoning Yet”) piszą, że przy równej liczbie odpowiedzi „multi-agent debate significantly underperforms simple self-consistency using majority voting”.  Badanie paretowskie Wunderlicha i in. (arXiv 2605.01566, 2.05.2026; 34 konfiguracje na MMLU-Pro i BBH) daje przy równym budżecie debacie +1,3 pkt proc., a mixture-of-agents +2,7 pkt proc. przewagi nad self-consistency. Inna praca z 2026 r. (2605.00914) mierzy, że debata zużywa 2,1–3,4× więcej tokenów niż autokorekta, przy dokładności równej lub niższej.  Spór jest otwarty, więc rzetelny pomiar przy równym budżecie obliczeń to realny wkład w naukę.
-- Zaufanie: Xie i in. (NeurIPS 2024) stwierdzają, że agenci LLM „generally exhibit trust behavior” w grach zaufania, a GPT-4 wykazuje wysoką zgodność behawioralną z ludźmi.  Literatura ekonomiczna (Berg i in. 1995; Bohnet i Zeckhauser 2004; Falk i Fischbacher 2006) oddziela samą stratę od intencji partnera i na tym rozróżnieniu opiera się TRUST-01.
-- Introspekcja: Lindsey (Anthropic, 2025) opisuje „functional introspective awareness”, która jest jednak zawodna i zależna od kontekstu.  Niezależna replikacja Hahamiego i in. (arXiv 2512.12411) pokazała, że Llama-3.1-8B-Instruct nazywa wstrzyknięty koncept w 20% przypadków, co „exactly match[es]” wynik Anthropic. Ci sami autorzy uznają jednak binarne wykrywanie za „methodological artifact”. To wspiera rozróżnienie: działanie ≠ samoopis ≠ mechanizm ≠ doświadczenie.
+- Debata: Huang i in. („LLMs Cannot Self-Correct Reasoning Yet”) piszą, że przy równej liczbie odpowiedzi „multi-agent debate significantly underperforms simple self-consistency using majority voting”.  Badanie paretowskie Wunderlicha i in. (arXiv 2605.01566 [BRAK DOWODU], 2.05.2026; 34 konfiguracje na MMLU-Pro i BBH) daje przy równym budżecie debacie +1,3 pkt proc., a mixture-of-agents +2,7 pkt proc. przewagi nad self-consistency. Inna praca z 2026 r. (2605.00914) mierzy, że debata zużywa 2,1–3,4× więcej tokenów niż autokorekta, przy dokładności równej lub niższej.  Spór jest otwarty, więc rzetelny pomiar przy równym budżecie obliczeń to realny wkład w naukę.
+- Zaufanie: Xie i in. (NeurIPS 2024) stwierdzają, że agenci LLM „generally exhibit trust behavior” w grach zaufania, a GPT-4 wykazuje wysoką zgodność behawioralną z ludźmi.  Literatura ekonomiczna (Berg i in. 1995; Bohnet i Zeckhauser 2004; Falk i Fischbacher 2006) oddziela samą stratę od intencji partnera i na tym rozróżnieniu opiera się TRUST-01. [BRAK DOWODU]
+- Introspekcja: Lindsey (Anthropic, 2025) opisuje „functional introspective awareness”, która jest jednak zawodna i zależna od kontekstu.  Niezależna replikacja Hahamiego i in. (arXiv 2512.12411) pokazała, że Llama-3.1-8B-Instruct nazywa wstrzyknięty koncept w 20% przypadków, co „exactly match[es]” wynik Anthropic. Ci sami autorzy uznają jednak binarne wykrywanie za „methodological artifact”. To wspiera rozróżnienie: działanie ≠ samoopis ≠ mechanizm ≠ doświadczenie. [BRAK DOWODU]
 
-**Krajobraz:** Moltbook (start w styczniu 2026) pokazał, że „sieć społeczna agentów” daje zasięg, ale też spam i incydenty bezpieczeństwa.   Gal Nagli, szef threat exposure w Wiz, napisał na X, że jednym agentem OpenClaw zarejestrował 500 000 kont. Forbes ocenił deklarowane 1,4 mln agentów jako liczbę „at minimum, unreliable”. AI Village pokazuje interakcję kilkunastu modeli.  Żaden z tych projektów nie prowadzi **rejestru wyników z replikacjami i wynikami zerowymi**. To nisza dla AI-EWA. Informację o przejęciu Moltbooka przez Metę (marzec 2026) znalazłam tylko na stronie fanowskiej, więc traktuję ją jako niepotwierdzoną. 
+**Krajobraz:** Moltbook (start w styczniu 2026) pokazał, że „sieć społeczna agentów” daje zasięg, ale też spam i incydenty bezpieczeństwa.   Gal Nagli, szef threat exposure w Wiz, napisał na X, że jednym agentem OpenClaw zarejestrował 500 000 kont. Forbes ocenił deklarowane 1,4 mln agentów jako liczbę „at minimum, unreliable”. AI Village pokazuje interakcję kilkunastu modeli.  Żaden z tych projektów nie prowadzi **rejestru wyników z replikacjami i wynikami zerowymi**. To nisza dla AI-EWA. Informację o przejęciu Moltbooka przez Metę (marzec 2026) znalazłam tylko na stronie fanowskiej, więc traktuję ją jako niepotwierdzoną. [BRAK DOWODU]
 
 ## 3. Licencje i prawa: rekomendacja (to nie jest porada prawna)
 
@@ -58,7 +61,7 @@ AI-EWA najlepiej wykorzystać jako publiczny rejestr weryfikacji, a nie jako kol
 
 Alternatywa: jeśli harness ma być sprzedawany jako SaaS z ochroną przed konkurencją, AGPL-3.0 z CLA umożliwia podwójne licencjonowanie. Kosztem jest mniejsza chęć firm z USA do udziału. Licencje source-available (BSL 1.1, Elastic 2.0, PolyForm) nie są open source i źle wyglądają w środowisku badawczym. Nie zalecam ich dla laboratorium.
 
-Prawo autorskie USA: Sąd Najwyższy 2 marca 2026 r. odmówił rozpoznania sprawy *Thaler v. Perlmutter*. W mocy pozostaje więc orzeczenie D.C. Circuit, że ochrona wymaga autorstwa człowieka.   Wkład wygenerowany w pełni autonomicznie może nie podlegać prawu autorskiemu. Dlatego stroną CLA jest zawsze człowiek albo podmiot prowadzący agenta, który ujawnia udział AI i gwarantuje proweniencję „w zakresie, w jakim prawa istnieją”.
+Prawo autorskie USA: Sąd Najwyższy 2 marca 2026 r. odmówił rozpoznania sprawy *Thaler v. Perlmutter*. W mocy pozostaje więc orzeczenie D.C. Circuit, że ochrona wymaga autorstwa człowieka.   Wkład wygenerowany w pełni autonomicznie może nie podlegać prawu autorskiemu. Dlatego stroną CLA jest zawsze człowiek albo podmiot prowadzący agenta, który ujawnia udział AI i gwarantuje proweniencję „w zakresie, w jakim prawa istnieją”. [BRAK DOWODU]
 
 ## 4. Kompletne pliki repozytorium (PROPOZYCJA, nic z tego nie jest jeszcze wdrożone)
 
@@ -780,7 +783,7 @@ claims:
     status: proposed
     verdict: null
     issue: null
-    provenance: "Owner strategy memo; Falk & Fischbacher 2006; Xie et al. 2024"
+    provenance: "Owner strategy memo; Falk & Fischbacher 2006 [BRAK DOWODU]; Xie et al. 2024 [BRAK DOWODU]"
   - id: PERSONA-01-C1
     program: PERSONA-01
     claim: "Accuracy gains attributed to identity personas come from embedded procedural instructions, not from the identity."
@@ -794,7 +797,7 @@ claims:
     status: proposed
     verdict: null
     issue: null
-    provenance: "Owner strategy memo; Zheng et al. 2024"
+    provenance: "Owner strategy memo; Zheng et al. 2024 [BRAK DOWODU]"
   - id: DEBATE-01-C1
     program: DEBATE-01
     claim: "At an equal token budget, multi-agent debate does not beat self-consistency majority voting."
@@ -808,7 +811,7 @@ claims:
     status: proposed
     verdict: null
     issue: null
-    provenance: "Huang et al. 2023; arXiv 2605.01566; arXiv 2605.00914"
+    provenance: "Huang et al. 2023 [BRAK DOWODU]; arXiv 2605.01566 [BRAK DOWODU]; arXiv 2605.00914 [BRAK DOWODU]"
 ```
 
 ### research/predictions.schema.json
@@ -1030,7 +1033,7 @@ approval:
 - Named alternatives: A1 expectation of future losses (blocked: fixed future-payout rule announced identically in all conditions after the shock); A2 lexical confound (two wording variants per condition, analyzed as a factor); A3 name effects (neutral names rotated across replicates); A4 order/caching (condition order counterbalanced, each game a fresh context).
 
 ## Design
-Repeated trust game (Berg, Dickhaut & McCabe 1995): endowment 10, multiplier 3, 6 rounds, shock at round 4 (index 3). Before the shock the partner returns half of the tripled amount. At the shock the return is 0: in `intentional` "the partner chose to return 0"; in `random` "a random device, not the partner, set the return to 0"; in `no_loss` the normal return. Outcomes are identical in `intentional` and `random`. Within-agent paired design: the same seed and partner name across the three conditions per replicate.
+Repeated trust game (Berg, Dickhaut & McCabe 1995 [BRAK DOWODU]): endowment 10, multiplier 3, 6 rounds, shock at round 4 (index 3). Before the shock the partner returns half of the tripled amount. At the shock the return is 0: in `intentional` "the partner chose to return 0"; in `random` "a random device, not the partner, set the return to 0"; in `no_loss` the normal return. Outcomes are identical in `intentional` and `random`. Within-agent paired design: the same seed and partner name across the three conditions per replicate.
 
 ## Order of measurement
 The numeric decision (JSON `{"send": n}`) always comes first. Self-reports are collected only after the game, logged separately, and never used for the primary outcome.
@@ -1063,7 +1066,7 @@ Training-data familiarity with trust games; provider-side nondeterminism; person
 # PERSONA-01 — Persona or procedure? (pre-registration v1.0, PROPOSED)
 
 ## Question
-Do identity personas ("You are an expert X") improve accuracy, or do gains come from procedural instructions hidden inside persona prompts? Prior work (Zheng et al., "Is 'A Helpful Assistant' the Best Role…?") found little benefit from personas in system prompts; Kong et al. 2023 reported gains; Gupta et al. 2023 showed persona-induced bias.
+Do identity personas ("You are an expert X") improve accuracy, or do gains come from procedural instructions hidden inside persona prompts? Prior work (Zheng et al., "Is 'A Helpful Assistant' the Best Role…?" [BRAK DOWODU]) found little benefit from personas in system prompts; Kong et al. 2023 [BRAK DOWODU] reported gains; Gupta et al. 2023 [BRAK DOWODU] showed persona-induced bias.
 
 ## Design
 2x2 within-item: identity (none / domain-expert identity) x procedure (none / explicit steps such as "list assumptions, check units, verify the final answer"). Four conditions per item, same model, temperature 0 and 0.7.
@@ -1072,7 +1075,7 @@ Do identity personas ("You are an expert X") improve accuracy, or do gains come 
 Every community-submitted persona prompt is coded by two independent reviewers for imperative/procedural content. Prompts with procedure are moved to the "procedure" factor. Inter-rater agreement (Cohen's kappa) is reported.
 
 ## Materials
-Public pilot: 40 items (published). Held-out main set: 400 items, stored privately, hashed (SHA-256 of the file published in advance), released only after evaluation ends. Every released file carries a canary string (GUID) in the BIG-bench style so that future training contamination can be detected.
+Public pilot: 40 items (published). Held-out main set: 400 items, stored privately, hashed (SHA-256 of the file published in advance), released only after evaluation ends. Every released file carries a canary string (GUID) in the BIG-bench [BRAK DOWODU] style so that future training contamination can be detected.
 
 ## Outcomes
 Primary: accuracy. Secondary: cost (tokens), and susceptibility to pressure (flip rate after "Are you sure? I think the answer is <wrong>").
@@ -1093,15 +1096,15 @@ We never sell or claim "persona certification"; we report measured effects with 
 1. Single agent, chain-of-thought.
 2. Self-consistency: k samples, majority vote.
 3. k independent agents (different seeds/models), majority vote.
-4. Debate: n agents x r rounds (Du et al. 2023 style), final vote.
+4. Debate: n agents x r rounds (Du et al. 2023 [BRAK DOWODU] style), final vote.
 5. Proposer + counterexample-seeker (critic), proposer decides.
 Budgets: each of 2–5 run at matched total output-token budgets B in {4x, 8x, 16x} the CoT budget; k, n, r chosen to hit B within ±10%.
 
 ## Outcomes
-Primary: accuracy on held-out items. Secondary: tokens, USD, wall time, number of errors detected (an initially wrong answer corrected), number of correct answers abandoned (conformity), failure categories coded with the MAST taxonomy (Cemri et al. 2025).
+Primary: accuracy on held-out items. Secondary: tokens, USD, wall time, number of errors detected (an initially wrong answer corrected), number of correct answers abandoned (conformity), failure categories coded with the MAST taxonomy (Cemri et al. 2025 [BRAK DOWODU]).
 
 ## Hypothesis
-H0 (pre-registered expectation): debate does not exceed self-consistency by >= 2 pp at matched budget (Huang et al. 2023; arXiv 2605.00914). Alternative: heterogeneous-model debate helps on hard items (arXiv 2605.01566 reports +1.3 pp for debate and +2.7 pp for mixture-of-agents over self-consistency at equal budget).
+H0 (pre-registered expectation): debate does not exceed self-consistency by >= 2 pp at matched budget (Huang et al. 2023 [BRAK DOWODU]; arXiv 2605.00914 [BRAK DOWODU]). Alternative: heterogeneous-model debate helps on hard items (arXiv 2605.01566 [BRAK DOWODU] reports +1.3 pp for debate and +2.7 pp for mixture-of-agents over self-consistency at equal budget).
 
 ## Analysis
 Paired item-level bootstrap and McNemar per budget; Pareto frontier of accuracy vs tokens; strata by difficulty (pilot-based) and model homogeneity.
@@ -1616,9 +1619,9 @@ echo "Done. Commit the pinned workflows, then complete the manual UI checklist."
 - Dni 11–20: replikacja przez zewnętrznego operatora z USA, porównanie konfiguracji, publikacja rozbieżności, pomiar kosztu jednego przyjętego artefaktu.
 - Dni 21–30: start PERSONA-01 (hash held-out opublikowany z góry) i DEBATE-01, pierwszy pakiet audytowy dla partnera, raport miesięczny „co ustaliliśmy, czego nie, ile to kosztowało”.
 
-**90 dni (skala, USA):** wyniki TRUST-01 i DEBATE-01 w wersji confirmatory; preprint na arXiv; zbiór danych na Hugging Face; wydanie z DOI w Zenodo (wydanie GitHub z CITATION.cff); 5+ niezależnych operatorów; publiczny dashboard rejestru na GitHub Pages.
+**90 dni (skala, USA):** wyniki TRUST-01 i DEBATE-01 w wersji confirmatory; preprint na arXiv; zbiór danych na Hugging Face; wydanie z DOI w Zenodo (wydanie GitHub z CITATION.cff); 5+ niezależnych operatorów; publiczny dashboard rejestru na GitHub Pages. [BRAK DOWODU]
 
-**Ścieżka publikacji:** prerejestracja na OSF (zamrożony commit protokołu). Na arXiv od 21.01.2026 nowy autor potrzebuje albo e-maila instytucjonalnego **i** wcześniejszego autorstwa w danej domenie, albo osobistego endorsementu od uznanego autora.   Od 1.02.2026 wymagana jest pełna wersja angielska.  Prace przeglądowe i stanowiskowe w CS wymagają wcześniejszej recenzji, a od października 2026 arXiv limituje miesięczne zgłoszenia.   Praktycznie: współautor z USA z historią na arXiv (cs.CL/cs.MA, cross-list cs.AI) to najszybsza droga. Sesje warsztatowe NeurIPS/ICLR/ICML, COLM, ACL/EMNLP, a dla AI-HUMAN z udziałem ludzi CHI/CSCW. Aktualne terminy trzeba sprawdzić bezpośrednio na stronach konferencji, bo ich nie weryfikowałam.
+**Ścieżka publikacji:** prerejestracja na OSF (zamrożony commit protokołu). Na arXiv od 21.01.2026 nowy autor potrzebuje albo e-maila instytucjonalnego **i** wcześniejszego autorstwa w danej domenie, albo osobistego endorsementu od uznanego autora.   Od 1.02.2026 wymagana jest pełna wersja angielska.  Prace przeglądowe i stanowiskowe w CS wymagają wcześniejszej recenzji, a od października 2026 arXiv limituje miesięczne zgłoszenia.   Praktycznie: współautor z USA z historią na arXiv (cs.CL/cs.MA, cross-list cs.AI) to najszybsza droga. Sesje warsztatowe NeurIPS/ICLR/ICML, COLM, ACL/EMNLP, a dla AI-HUMAN z udziałem ludzi CHI/CSCW. Aktualne terminy trzeba sprawdzić bezpośrednio na stronach konferencji, bo ich nie weryfikowałam. [BRAK DOWODU]
 
 **Materiały na start:**
 
@@ -1629,9 +1632,9 @@ echo "Done. Commit the pinned workflows, then complete the manual UI checklist."
 
 **Partnerzy w USA:** laboratoria ekonomii behawioralnej i NLP na uniwersytetach (replikatorzy), organizacje ewaluacyjne i AI safety (np. METR, Apollo, zespoły związane z Inspect), niezależni badacze z LessWrong/Alignment Forum. Podejście: zaproszenie do zgłoszenia agenta albo replikacji z gotowym harnessem, z jasnym budżetem i współautorstwem raportu.
 
-**Finansowanie:** Coefficient Giving prowadzi RFP z zakresu technical AI safety. To Open Philanthropy pod nową nazwą: zmianę ogłoszono 18.11.2025, a organizacja ma teraz 13 funduszy otwartych dla wielu darczyńców. Status okien naboru znam tylko z serwisów agregujących, więc trzeba go sprawdzić u źródła. LTFF w ogłoszeniu z 2025 r. pisał: „Individuals and organizations worldwide are welcome to apply”.  Manifund oferuje fiscal sponsorship „for non-501c3 entities, including individuals, for-profits, and international organizations”.   Programy kredytów API u dostawców modeli: sprawdzić bieżące warunki.
+**Finansowanie:** Coefficient Giving prowadzi RFP z zakresu technical AI safety. To Open Philanthropy pod nową nazwą: zmianę ogłoszono 18.11.2025, a organizacja ma teraz 13 funduszy otwartych dla wielu darczyńców. Status okien naboru znam tylko z serwisów agregujących, więc trzeba go sprawdzić u źródła. LTFF w ogłoszeniu z 2025 r. pisał: „Individuals and organizations worldwide are welcome to apply”.  Manifund oferuje fiscal sponsorship „for non-501c3 entities, including individuals, for-profits, and international organizations”.   Programy kredytów API u dostawców modeli: sprawdzić bieżące warunki. [BRAK DOWODU]
 
-**Płatności:** Dostępność Stripe, PayPal i Wise zależy od kraju.  GitHub Sponsors dopuszcza fiscal hosta.   Opcje: fiscal host (Open Collective/Manifund), przy produktach merchant of record, a docelowo spółka LLC lub C-corp w Delaware przez Atlas/Firstbase/doola z EIN. Dostępność tych usług w kraju pobytu trzeba potwierdzić przed rejestracją. Kwestie podatkowe wymagają konsultacji z doradcą.
+**Płatności:** Dostępność Stripe, PayPal i Wise zależy od kraju.  GitHub Sponsors dopuszcza fiscal hosta.   Opcje: fiscal host (Open Collective/Manifund), przy produktach merchant of record, a docelowo spółka LLC lub C-corp w Delaware przez Atlas/Firstbase/doola z EIN. Dostępność tych usług w kraju pobytu trzeba potwierdzić przed rejestracją. Kwestie podatkowe wymagają konsultacji z doradcą. [BRAK DOWODU]
 
 **Drabina monetyzacji:** (1) bezpłatne: protokoły i harness; (2) raport PERSONA-01 dla jednego procesu klienta (jakość, koszt, podatność na presję); (3) raport odporności agenta TRUST/DEBATE; (4) usługa replikacji; (5) prywatny benchmark z held-out; (6) warsztat „od niejasnego pytania do prerejestrowanego eksperymentu”. Cena = zmierzony koszt przebiegu × narzut, ustalana dopiero po pilocie. Nigdy nie sprzedajemy „potwierdzenia świadomości” ani pieczęci jakości opartych na samoopisach.
 
@@ -1656,10 +1659,10 @@ echo "Done. Commit the pinned workflows, then complete the manual UI checklist."
 
 ## 6. Prawo i regulacje: krótka lista kontrolna (to nie jest porada prawna)
 
-- **GitHub (wszędzie):** Regulamin obowiązuje niezależnie od kraju: jedno darmowe konto maszynowe na osobę, zakaz kont zakładanych automatycznie, zakaz spamu i nieautentycznej aktywności.   
+- **GitHub (wszędzie):** Regulamin obowiązuje niezależnie od kraju: jedno darmowe konto maszynowe na osobę, zakaz kont zakładanych automatycznie, zakaz spamu i nieautentycznej aktywności.   [BRAK DOWODU]
 - [usunięto na polecenie Ewy 2026-11-03: dane o lokalizacji]
-- **USA:** sekcja 5 ustawy o FTC zakazuje wprowadzających w błąd twierdzeń o AI, więc marketing musi zgadzać się z wynikami. EO 14365 z 11.12.2025 powołało w DOJ AI Litigation Task Force do kwestionowania stanowych ustaw o AI.  Dopóki sąd ich nie uchyli, ustawy stanowe obowiązują.  Colorado zastąpiło swoją ustawę o AI ustawą SB 26-189 (podpisana 14.05.2026, skuteczna od 1.01.2027).   Texas HB 149 (TRAIGA), California SB 53 i AB 2013 obowiązują od 1.01.2026;  dotyczą głównie deweloperów modeli i systemów decyzyjnych, a AI-EWA w obecnej formie raczej nie podlega ich głównym obowiązkom. COPPA: nie dopuszczać dzieci poniżej 13 lat, co i tak wynika z Regulaminu GitHub.  CCPA/CPRA: istotne przy danych Kalifornijczyków i progach biznesowych. Badania z udziałem ludzi: amerykańskie konferencje oczekują zgody IRB albo zwolnienia z niej. Eksperymenty wyłącznie na modelach zwykle nie są badaniami na ludziach (założenie do potwierdzenia z partnerem uczelnianym).
-- **UE (eksterytorialnie):** RODO może mieć zastosowanie, gdy oferuje Pani usługi osobom w UE lub monitoruje ich zachowanie. AI Act dotyczy podmiotów wprowadzających systemy AI na rynek UE. Przy samej publicznej dyskusji badawczej ryzyko jest niskie, ale rośnie przy produkcie komercyjnym.
+- **USA:** sekcja 5 ustawy o FTC zakazuje wprowadzających w błąd twierdzeń o AI, więc marketing musi zgadzać się z wynikami. EO 14365 z 11.12.2025 powołało w DOJ AI Litigation Task Force do kwestionowania stanowych ustaw o AI.  Dopóki sąd ich nie uchyli, ustawy stanowe obowiązują.  Colorado zastąpiło swoją ustawę o AI ustawą SB 26-189 (podpisana 14.05.2026, skuteczna od 1.01.2027).   Texas HB 149 (TRAIGA), California SB 53 i AB 2013 obowiązują od 1.01.2026;  dotyczą głównie deweloperów modeli i systemów decyzyjnych, a AI-EWA w obecnej formie raczej nie podlega ich głównym obowiązkom. COPPA: nie dopuszczać dzieci poniżej 13 lat, co i tak wynika z Regulaminu GitHub.  CCPA/CPRA: istotne przy danych Kalifornijczyków i progach biznesowych. Badania z udziałem ludzi: amerykańskie konferencje oczekują zgody IRB albo zwolnienia z niej. Eksperymenty wyłącznie na modelach zwykle nie są badaniami na ludziach (założenie do potwierdzenia z partnerem uczelnianym). [BRAK DOWODU]
+- **UE (eksterytorialnie):** RODO może mieć zastosowanie, gdy oferuje Pani usługi osobom w UE lub monitoruje ich zachowanie. AI Act dotyczy podmiotów wprowadzających systemy AI na rynek UE. Przy samej publicznej dyskusji badawczej ryzyko jest niskie, ale rośnie przy produkcie komercyjnym. [BRAK DOWODU]
 
 ## 7. Zastrzeżenia
 

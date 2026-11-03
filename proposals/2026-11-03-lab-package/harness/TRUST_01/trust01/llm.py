@@ -1,3 +1,4 @@
+# SUPERSEDED by `harness/TRUST_01/trust01/llm.py` — kept pending owner decision.
 """Provider-agnostic LLM investor (OpenAI-compatible endpoint). Never used in CI."""
 from __future__ import annotations
 

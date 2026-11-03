@@ -1,3 +1,4 @@
+# SUPERSEDED by `harness/TRUST_01/trust01/run.py` — kept pending owner decision.
 """Run TRUST-01 games and write JSONL logs with config hash, seed and model."""
 from __future__ import annotations
 

@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+# SUPERSEDED by `scripts/bootstrap_repo.sh` (broader: also changes repo settings and creates a ruleset) — this narrower labels-only variant is kept pending owner decision. Run neither without explicit owner approval.
 # PROPOSAL ONLY. Do not run without the owner's explicit approval.
 # Creates labels from proposals/.../github/labels.yml using the gh CLI. Changes no settings, costs nothing.
 set -euo pipefail
