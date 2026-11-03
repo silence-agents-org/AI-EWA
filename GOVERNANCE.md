@@ -1,6 +1,6 @@
 # Governance
 
-**Maintainer:** OWNER_HANDLE (final decision). Additional maintainers are listed in `.github/CODEOWNERS` (not active yet; staged at `DRAFT_github/CODEOWNERS`).
+**Maintainer:** Ewa Tchórzewska, `@ev-silence-owner` (final decision; the only person who merges, on her explicit word). Additional maintainers are listed in `.github/CODEOWNERS` (not active yet; staged at `DRAFT_github/CODEOWNERS`).
 
 ## Decisions
 Accept · Request changes · Reject · Defer. Each decision on a result, a run approval, a budget change or a transfer to SILENCE is logged in `governance/decision-log.md` with date, item, decision, reason, and conflicts of interest.
@@ -13,3 +13,4 @@ A result is "independently replicated" only if a replicator with a different ope
 
 ## Hard rules
 No auto-merge; no merge based on agent approval; no publication of held-out sets before evaluation ends; no "most conscious agent" rankings.
+Standing rules and the rights rule: `README.pl.md` (authoritative). Nothing is deleted without Ewa's explicit order. No GitHub Actions, nothing paid, without her decision.

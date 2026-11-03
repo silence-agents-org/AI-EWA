@@ -1,5 +1,13 @@
-# SUPERSEDED by `harness/TRUST_01/trust01/llm.py` — kept pending owner decision.
-"""Provider-agnostic LLM investor (OpenAI-compatible endpoint). Never used in CI."""
+# SUPERSEDED — kanoniczna wersja: `harness/TRUST_01/trust01/llm.py`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
+"""Provider-agnostic LLM investor (OpenAI-compatible endpoint). Never used in CI.
+
+Paid API calls are OFF by default. A real network call happens only if ALL of these hold:
+1. the run was started with ``--allow-llm`` and ``budget.max_llm_calls > 0`` (see run.py);
+2. ``AIEWA_LLM_BASE_URL``, ``AIEWA_LLM_API_KEY`` and ``AIEWA_LLM_MODEL`` are set in the environment
+   (keys are never hard-coded or stored in the repository);
+3. ``AIEWA_ALLOW_PAID_CALLS=yes`` is set explicitly — only after Ewa's approval is recorded in
+   governance/decision-log.md (standing rule: nothing paid without her decision).
+"""
 from __future__ import annotations
 
 import json
@@ -70,6 +78,9 @@ def parse_send(text: Optional[str], endowment: int = 10) -> Optional[int]:
 
 
 def http_transport(settings: LLMSettings, messages: list, seed: int) -> Tuple[str, str]:
+    if os.environ.get("AIEWA_ALLOW_PAID_CALLS", "") != "yes":
+        raise LLMConfigError("paid API calls are disabled by default; set AIEWA_ALLOW_PAID_CALLS=yes "
+                             "only after Ewa's approval is recorded in governance/decision-log.md")
     body = json.dumps({"model": settings.model, "messages": messages,
                        "temperature": settings.temperature, "max_tokens": settings.max_tokens,
                        "seed": seed}).encode()

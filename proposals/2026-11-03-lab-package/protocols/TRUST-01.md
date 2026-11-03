@@ -1,4 +1,4 @@
-> SUPERSEDED by `protocols/TRUST-01.md` — kept pending owner decision.
+> SUPERSEDED — kanoniczna wersja: `protocols/TRUST-01.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # TRUST-01 — Does attribution of agency change an agent's investment decision? (pre-registration v1.0, PROPOSED)
 

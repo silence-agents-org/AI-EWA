@@ -1,3 +1,5 @@
+> SUPERSEDED — kanoniczna wersja: `RIGHTS.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
+
 # Rights, licenses and provenance
 
 Not legal advice. Have a lawyer review before relying on this file.

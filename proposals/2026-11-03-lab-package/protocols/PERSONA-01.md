@@ -1,4 +1,4 @@
-> SUPERSEDED by `protocols/PERSONA-01.md` — kept pending owner decision.
+> SUPERSEDED — kanoniczna wersja: `protocols/PERSONA-01.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # PERSONA-01 — Persona or procedure? (pre-registration v1.0, PROPOSED)
 

@@ -1,4 +1,4 @@
-> SUPERSEDED by `AGENTS.md` — kept pending owner decision.
+> SUPERSEDED — kanoniczna wersja: `AGENTS.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # Operating rules for AI agents
 

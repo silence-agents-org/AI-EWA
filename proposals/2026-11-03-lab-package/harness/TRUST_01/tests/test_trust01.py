@@ -1,9 +1,10 @@
-# SUPERSEDED by `harness/TRUST_01/tests/test_trust01.py` — kept pending owner decision.
+# SUPERSEDED — kanoniczna wersja: `harness/TRUST_01/tests/test_trust01.py`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 import pytest
 
 from trust01.analysis import load_games, summarize
 from trust01.engine import RuleInvestor, play_game
-from trust01.llm import LLMInvestor, LLMSettings, ParseFailure, parse_send, render_prompt
+from trust01.llm import (LLMConfigError, LLMInvestor, LLMSettings, ParseFailure, http_transport,
+                         parse_send, render_prompt)
 from trust01.run import config_hash, run
 
 CFG = {"base_seed": 7, "replicates": 40, "game": {"n_rounds": 6, "shock_round": 3},
@@ -68,3 +69,9 @@ def test_run_refuses_llm_without_flag(tmp_path):
 
 def test_config_hash_stable():
     assert config_hash(CFG) == config_hash(dict(CFG))
+
+def test_http_transport_blocked_by_default(monkeypatch):
+    """Paid calls are off unless AIEWA_ALLOW_PAID_CALLS=yes; the guard fires before any network access."""
+    monkeypatch.delenv("AIEWA_ALLOW_PAID_CALLS", raising=False)
+    with pytest.raises(LLMConfigError):
+        http_transport(SETTINGS, [{"role": "user", "content": "x"}], seed=0)

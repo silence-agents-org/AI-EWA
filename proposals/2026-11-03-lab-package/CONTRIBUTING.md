@@ -1,4 +1,4 @@
-> SUPERSEDED by `CONTRIBUTING.md` — kept pending owner decision.
+> SUPERSEDED — kanoniczna wersja: `CONTRIBUTING.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # Contributing to AI-EWA
 

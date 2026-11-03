@@ -1,4 +1,4 @@
-> SUPERSEDED by `SECURITY.md` — kept pending owner decision.
+> SUPERSEDED — kanoniczna wersja: `SECURITY.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # Security policy
 

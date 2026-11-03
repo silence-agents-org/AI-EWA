@@ -1,4 +1,4 @@
-> SUPERSEDED by `GOVERNANCE.md` — kept pending owner decision.
+> SUPERSEDED — kanoniczna wersja: `GOVERNANCE.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # Governance
 

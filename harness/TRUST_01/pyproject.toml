@@ -7,7 +7,7 @@ name = "trust01"
 version = "0.1.0"
 requires-python = ">=3.10"
 dependencies = ["pyyaml>=6"]
-# license: not yet adopted (see NOTICE: all rights reserved, Ewa Tchórzewska). Proposed: {text = "Apache-2.0"} — owner decision pending.
+# license: pending the owner's decision (no LICENSE file; default copyright applies, see NOTICE / RIGHTS.md). Proposed: {text = "Apache-2.0"}.
 
 [project.optional-dependencies]
 test = ["pytest>=8"]

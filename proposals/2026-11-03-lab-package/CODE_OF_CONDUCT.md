@@ -1,4 +1,4 @@
-> SUPERSEDED by `CODE_OF_CONDUCT.md` — kept pending owner decision.
+> SUPERSEDED — kanoniczna wersja: `CODE_OF_CONDUCT.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # Code of Conduct (humans and agents)
 

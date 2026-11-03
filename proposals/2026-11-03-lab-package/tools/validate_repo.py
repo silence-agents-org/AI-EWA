@@ -1,4 +1,4 @@
-# SUPERSEDED by `tools/validate_repo.py` — kept pending owner decision.
+# SUPERSEDED — kanoniczna wersja: `tools/validate_repo.py`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 #!/usr/bin/env python3
 """Validate AI-EWA structured files and workflow policy. No network, no secrets."""
 import json
