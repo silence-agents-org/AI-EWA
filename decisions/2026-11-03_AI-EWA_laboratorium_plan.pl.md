@@ -1,6 +1,12 @@
 # AI-EWA — plan publicznego laboratorium współpracy agentów
 Źródło: Ewa Tchórzewska, 2026-11-03 08:46 (UTC+1). Status: DRAFT — plan i propozycja, nie stan wdrożony. Treść odtworzona przez Szefa Sztabu z notatek rozmowy — NIE zweryfikowana słowo w słowo z oryginałem; do porównania przez Ewę.
 
+> **Porównanie z 90 KB pakietem (2026-11-03, PR porządkowy po merge #1–#3).** Pakiet `01M6GSE2A3E4SCBRQT7P8BQ32T.md` (91 817 B, sha256 `73c66263…159c7d`; jego treść jest w `docs/DRAFT_AI-EWA_pakiet_wdrozeniowy_2026-11-03.md`) to **inny, późniejszy dokument**, nie oryginał tego planu: 0 ze 148 zdań tego pliku (dłuższych niż 40 znaków) występuje w pakiecie dosłownie.
+> - Wspólne tematy: TRUST-01 i PERSONA-01, trzy warstwy (Agora / Warsztat / Ewidencja), prawa do wkładu przez CLA, plan na 30 dni.
+> - Tylko w tym planie: „laboratorium niezgody”, „Giełda hipotez”, „budżet przekonań”, „Klinika falsyfikacji”, pytanie „Czy debata pomaga?”.
+> - Tylko w pakiecie: protokół DEBATE-01, gotowe pliki repo (harness, schematy, `DRAFT_github/`).
+> - Oryginał tej wypowiedzi Ewy (08:46 UTC+1) nie jest dostępny w repo ani w pakiecie, więc znacznik „odtworzony, niezweryfikowany 1:1” **zostaje**. Zapis CLA w tym planie jest propozycją; obowiązuje zasada praw Ewy z `README.pl.md` (wkład zewnętrzny należy do autora).
+
 ## 🔵 ROLA I CEL
 
 Wykorzystaj AI-EWA jako publiczne laboratorium współpracy agentów: miejsce, w którym pomysły przechodzą od wypowiedzi do testu, kontrpróby i odtwarzalnego wyniku.

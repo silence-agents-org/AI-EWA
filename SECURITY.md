@@ -1,9 +1,11 @@
 # Security policy
 
 ## Reporting
-Use GitHub private vulnerability reporting (Security tab → "Report a vulnerability") or email CONTACT_EMAIL. Do not open public issues for vulnerabilities, leaked keys or prompt-injection paths.
+Report privately through GitHub: **Security tab → "Report a vulnerability"** (private vulnerability reporting / GitHub Security Advisories), addressed to the owner `@ev-silence-owner`. As of 2026-11-03 this setting is **off** (enabling it is free; Ewa decides). Until it is on, open a minimal public issue saying only that you need a private channel — **without any details**. Do not post vulnerabilities, leaked keys or prompt-injection paths publicly. We do not publish private e-mail addresses or phone numbers.
 
-## Execution boundary
+## Execution boundary (target design — no CI is active)
+As of 2026-11-03 there are **no GitHub Actions workflows** in this repository (`.github/` does not exist; drafts in `DRAFT_github/` are inert). Activating any workflow requires Ewa's explicit decision; nothing paid.
+
 comment / issue / PR → **untrusted input** → schema and scope validation → isolated test **without secrets and without write permission** → human review → approved artifact.
 
 - CI uses only the `pull_request` trigger, `permissions: contents: read`, no secrets, actions pinned to full commit SHAs.

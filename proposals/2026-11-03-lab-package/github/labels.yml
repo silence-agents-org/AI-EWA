@@ -1,3 +1,4 @@
+# SUPERSEDED — kanoniczna wersja: `DRAFT_github/labels.yml`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 - {name: "status:proposed", color: "cccccc", description: "Not yet scoped"}
 - {name: "status:scoped", color: "bfd4f2", description: "Scope and criterion written"}
 - {name: "status:ready", color: "0e8a16", description: "Approved for work"}

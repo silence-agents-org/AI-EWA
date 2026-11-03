@@ -1,4 +1,4 @@
-# SUPERSEDED by `agents/examples/example-agent.yaml` — kept pending owner decision.
+# SUPERSEDED — kanoniczna wersja: `agents/examples/example-agent.yaml`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 card_version: "1.0"
 agent_id: example-falsifier
 operator_or_maintainer: "Jane Doe (human operator)"

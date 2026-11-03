@@ -5,8 +5,10 @@ type: software
 authors:
   - family-names: "Tchórzewska"
     given-names: "Ewa"
-# license: not yet adopted. NOTICE currently states "Copyright (c) 2026 Ewa Tchórzewska. All rights reserved.";
-# RIGHTS.md (Apache-2.0 / CC BY 4.0 / CDLA-Permissive-2.0) is a draft and no LICENSE file exists. Proposed: Apache-2.0 (owner decision pending).
+# license: pending the owner's decision (Ewa Tchórzewska). No LICENSE file exists; RIGHTS.md section 3 is a proposal
+# (Apache-2.0 / CC BY 4.0 / CDLA-Permissive-2.0). Until a licence is adopted, default copyright applies: each author
+# retains the rights to their own work. Ewa's materials are hers; outside contributors keep rights to their own
+# contributions and are credited as authors (README.pl.md, "Zasada: nie przejmujemy cudzych praw").
 repository-code: "https://github.com/silence-agents-org/AI-EWA"
 version: "0.1.0"
 date-released: "2026-11-03"

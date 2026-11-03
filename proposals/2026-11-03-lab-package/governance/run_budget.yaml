@@ -1,3 +1,4 @@
+# SUPERSEDED — kanoniczna wersja: `governance/run_budget.yaml`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 version: 1
 defaults:
   max_usd_per_run: 25

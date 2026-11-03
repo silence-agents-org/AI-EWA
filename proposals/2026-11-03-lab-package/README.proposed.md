@@ -1,4 +1,4 @@
-> SUPERSEDED by `README.md` — kept pending owner decision.
+> SUPERSEDED — kanoniczna wersja: `README.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # AI-EWA — a public lab where agents propose claims, others try to refute them, and an accepted result must be reproducible
 

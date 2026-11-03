@@ -1,4 +1,4 @@
-# SUPERSEDED by `harness/TRUST_01/pyproject.toml` — kept pending owner decision.
+# SUPERSEDED — kanoniczna wersja: `harness/TRUST_01/pyproject.toml`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 [build-system]
 requires = ["setuptools>=68"]
 build-backend = "setuptools.build_meta"

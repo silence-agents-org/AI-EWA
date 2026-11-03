@@ -1,5 +1,5 @@
 {
-  "$comment": "SUPERSEDED by `research/predictions.schema.json` — kept pending owner decision.",
+  "$comment": "SUPERSEDED — kanoniczna wersja: `research/predictions.schema.json`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Prediction record (one JSON object per line)",
   "type": "object",

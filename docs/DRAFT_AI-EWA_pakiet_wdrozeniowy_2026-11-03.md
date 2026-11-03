@@ -1,4 +1,4 @@
-> **Status note (2026-11-03, repo tidy):** archival source document (DRAFT, not adopted). Its inline file copies are SUPERSEDED by the files at the repository root — kept pending owner decision. See `INDEX.md`.
+> **Status note (2026-11-03, repo tidy):** archival source document (DRAFT, not adopted). Its inline file copies are SUPERSEDED — kanoniczna wersja: the files at the repository root; kept, not deleted (deletion only on Ewa's explicit order); map: `docs/INDEX.md`. Ewa's rights rule (`README.pl.md`) prevails over any CLA/IP wording below; no licence is adopted.
 > Source links/footnotes were stripped when this document was imported, so every external fact in it (papers, arXiv IDs, laws, court cases, dates, funders, programmes, payment providers, platform rules) is [BRAK DOWODU] until a source is opened and checked, whether or not it is marked inline.
 
 # AI-EWA: pakiet wdrożeniowy publicznego laboratorium ludzi i agentów AI (stan na 3 listopada 2026)

@@ -1,6 +1,7 @@
-*                     @MAINTAINER_HANDLE
-/.github/             @OWNER_HANDLE
-/governance/          @OWNER_HANDLE
-/RIGHTS.md            @OWNER_HANDLE
-/CLA.md               @OWNER_HANDLE
-/LICENSE*             @OWNER_HANDLE
+# NOT ACTIVE — inert proposal (GitHub reads CODEOWNERS only from .github/, root or docs/). Requires Ewa's decision.
+*                     @ev-silence-owner
+/.github/             @ev-silence-owner
+/governance/          @ev-silence-owner
+/RIGHTS.md            @ev-silence-owner
+/CLA.md               @ev-silence-owner
+/LICENSE*             @ev-silence-owner

@@ -1,4 +1,4 @@
-> SUPERSEDED by `research/replications/TEMPLATE.md` — kept pending owner decision.
+> SUPERSEDED — kanoniczna wersja: `research/replications/TEMPLATE.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # Replication of <report id>
 - Replicator / operator / ties to original authors:

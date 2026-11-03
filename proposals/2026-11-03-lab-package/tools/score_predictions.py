@@ -1,4 +1,4 @@
-# SUPERSEDED by `tools/score_predictions.py` — kept pending owner decision.
+# SUPERSEDED — kanoniczna wersja: `tools/score_predictions.py`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 #!/usr/bin/env python3
 """Score resolved predictions: Brier score, log loss, calibration bins (stdlib only)."""
 import argparse

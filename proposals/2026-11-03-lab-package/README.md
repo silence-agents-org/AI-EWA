@@ -1,4 +1,4 @@
-> SUPERSEDED by `INDEX.md` (repo-level map; the canonical files now live at the repository root) — kept pending owner decision.
+> SUPERSEDED — kanoniczna wersja: `docs/INDEX.md` (repo-level map; the canonical files now live at the repository root); kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # Lab package proposal (2026-11-03) — DRAFT
 

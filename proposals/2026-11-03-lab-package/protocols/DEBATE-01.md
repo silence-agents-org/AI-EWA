@@ -1,4 +1,4 @@
-> SUPERSEDED by `protocols/DEBATE-01.md` — kept pending owner decision.
+> SUPERSEDED — kanoniczna wersja: `protocols/DEBATE-01.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # DEBATE-01 — Does debate help at equal compute? (pre-registration v1.0, PROPOSED)
 

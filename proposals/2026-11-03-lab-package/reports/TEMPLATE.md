@@ -1,4 +1,4 @@
-> SUPERSEDED by `reports/TEMPLATE.md` — kept pending owner decision.
+> SUPERSEDED — kanoniczna wersja: `reports/TEMPLATE.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # Report <protocol id> — <date>
 1. Question and protocol ID (pre-registration commit):

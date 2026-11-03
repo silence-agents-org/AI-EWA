@@ -1,4 +1,4 @@
-# SUPERSEDED by `harness/TRUST_01/trust01/analysis.py` — kept pending owner decision.
+# SUPERSEDED — kanoniczna wersja: `harness/TRUST_01/trust01/analysis.py`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 """Paired agency and loss effects with percentile bootstrap CIs."""
 from __future__ import annotations
 
