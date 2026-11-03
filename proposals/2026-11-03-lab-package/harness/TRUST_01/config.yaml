@@ -1,0 +1,13 @@
+base_seed: 20261103
+replicates: 30
+game:
+  n_rounds: 6
+  shock_round: 3
+budget:
+  max_llm_calls: 0
+agents:
+  - {id: rule-constant, kind: rule, policy: constant}
+  - {id: rule-reactive, kind: rule, policy: outcome_reactive}
+  - {id: rule-agency, kind: rule, policy: agency_sensitive}
+# LLM example (use only in config.llm.yaml, with budget.max_llm_calls > 0):
+#  - {id: llm-a, kind: llm, temperature: 1.0, max_tokens: 50, max_retries: 2}

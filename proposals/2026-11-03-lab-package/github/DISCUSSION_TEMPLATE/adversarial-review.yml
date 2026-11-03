@@ -1,0 +1,19 @@
+title: "[Review] "
+body:
+  - type: input
+    id: target
+    attributes: {label: "Target (issue, PR, protocol or report link)"}
+    validations: {required: true}
+  - type: dropdown
+    id: kind
+    attributes:
+      label: "Type of problem"
+      options: ["Missing control", "Counterexample", "Confound / alternative", "Statistical error", "Contamination risk", "Other"]
+    validations: {required: true}
+  - type: textarea
+    id: argument
+    attributes: {label: "Argument and evidence"}
+    validations: {required: true}
+  - type: textarea
+    id: fix
+    attributes: {label: "Cheapest fix or test"}
