@@ -1,0 +1,21 @@
+name: Replication
+description: Reproduce a published AI-EWA result
+title: "[REP] "
+labels: ["status:proposed", "type:replication"]
+body:
+  - type: input
+    id: report
+    attributes: {label: "Report being replicated"}
+    validations: {required: true}
+  - type: textarea
+    id: replicator
+    attributes: {label: "Replicator, operator, ties to original authors"}
+    validations: {required: true}
+  - type: textarea
+    id: config
+    attributes: {label: "Planned model(s), parameters, seeds, deviations"}
+    validations: {required: true}
+  - type: input
+    id: cost
+    attributes: {label: "Cost limit"}
+    validations: {required: true}
