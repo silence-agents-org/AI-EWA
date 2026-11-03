@@ -85,7 +85,7 @@ Analysis: mixed-effects logistic regression (random effects for task and task fa
 | [`PROTOCOL_v1.0.md`](PROTOCOL_v1.0.md) | Full protocol (English translation of the author's text) |
 | [`PILOT_METHOD_v0.1.md`](PILOT_METHOD_v0.1.md) | Pilot structure and scoring rubric (no tasks or keys) |
 | [`ADR-DRAFT_identity_vs_procedure.md`](ADR-DRAFT_identity_vs_procedure.md) | Decision record (draft) |
-| [`schemas/effectlog_run_record.schema.json`](schemas/effectlog_run_record.schema.json) | Per-call audit record (JSON Schema 2020-12) |
+| [`schemas/effectlog_run_record.schema.json`](schemas/effectlog_run_record.schema.json) | Per-call audit record, **pilot** schema v0.1 (JSON Schema 2020-12; pilot task IDs only) |
 | [`docs/persona-01.jsonld`](docs/persona-01.jsonld) | schema.org metadata |
 | [`CITATION.cff`](CITATION.cff), [`llms.txt`](llms.txt) | Citation and machine-readable summary |
 

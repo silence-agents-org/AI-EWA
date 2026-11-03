@@ -186,7 +186,7 @@ The study measures the effect of specific prompt additions, not an isolated "pur
 
 1. Complete the literature review and confirm the novelty scope. 2. Freeze the main question and scope of inference. 3. Prepare prompt modules A–D. 4. Check separation of identity from procedure. 5. Build pilot tasks. 6. Prepare keys and rubric. 7. Independent key review. 8. Choose model versions and parameters. 9. Run the pilot. 10. Check feasibility, measurement errors and rater agreement. 11. Estimate required task count and cost. 12. Freeze main set, prompts, metrics, analysis. 13. Pre-register and disclose the pilot. 14. Run in interleaved blocks. 15. Keep a full manifest of every call. 16. Score blind to condition. 17. Resolve rating disagreements. 18. Run the planned analysis. 19. Label exploratory analyses. 20. Publish results, limitations and deviations. 21. Only then change the SILENCE persona library.
 
-**EffectLog.** Every call is logged with the fields in [`schemas/effectlog_run_record.schema.json`](schemas/effectlog_run_record.schema.json). EffectLog makes execution auditable. It does not guarantee an identical result from an external model on re-run.
+**EffectLog.** Every call is logged with the fields in [`schemas/effectlog_run_record.schema.json`](schemas/effectlog_run_record.schema.json). That file is the **pilot** schema (v0.1): its `task_id` accepts only pilot IDs `P001`–`P024`; a main-study version with its own ID pattern is to be defined when the main set is frozen (step 12). EffectLog makes execution auditable. It does not guarantee an identical result from an external model on re-run.
 
 ## Guardrail
 

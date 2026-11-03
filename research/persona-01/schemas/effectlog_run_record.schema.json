@@ -1,8 +1,8 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "persona01/effectlog_run_record.v0.1",
-  "title": "PERSONA-01 EffectLog run record (one per model call)",
-  "description": "Fields from PERSONA-01 protocol v1.0 §9 (EffectLog) plus pilot extensions (prefix x_). Audit trail only; does NOT imply bit-exact reproducibility of external models.",
+  "title": "PERSONA-01 EffectLog run record, PILOT schema v0.1 (one per model call)",
+  "description": "PILOT schema: task_id accepts only pilot IDs P001-P024 (additionalProperties: false); a main-study schema is to be defined when the main set is frozen (protocol step 12). Fields from PERSONA-01 protocol v1.0 §9 (EffectLog) plus pilot extensions (prefix x_). Audit trail only; does NOT imply bit-exact reproducibility of external models.",
   "type": "object",
   "required": [
     "run_id",
