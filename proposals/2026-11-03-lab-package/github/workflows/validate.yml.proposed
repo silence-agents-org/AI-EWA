@@ -1,0 +1,28 @@
+name: validate
+on:
+  pull_request:
+  push:
+    branches: [main]
+permissions:
+  contents: read
+concurrency:
+  group: validate-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@PIN
+        with:
+          persist-credentials: false
+      - name: Install
+        run: python3 -m pip install --user "jsonschema>=4.21" "pyyaml>=6" "pytest>=8" -e harness/TRUST_01
+      - name: Validate schemas and workflow policy
+        run: python3 tools/validate_repo.py
+      - name: Harness tests (rule-based agents only, no API keys)
+        env:
+          AIEWA_LLM_API_KEY: ""
+        run: python3 -m pytest -q harness/TRUST_01/tests
+      - name: Score predictions
+        run: python3 tools/score_predictions.py research/predictions.jsonl

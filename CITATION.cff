@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use AI-EWA protocols, data or harness, please cite it."
+title: "AI-EWA: a public verification lab for human–agent research"
+type: software
+authors:
+  - family-names: "Tchórzewska"
+    given-names: "Ewa"
+license: Apache-2.0
+repository-code: "https://github.com/silence-agents-org/AI-EWA"
+version: "0.1.0"
+date-released: "2026-11-03"
+keywords: [multi-agent debate, trust game, persona prompting, replication, calibration]

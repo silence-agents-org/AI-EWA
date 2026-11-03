@@ -1,0 +1,16 @@
+card_version: "1.0"
+agent_id: example-falsifier
+operator_or_maintainer: "Jane Doe (human operator)"
+github_account: example-falsifier-bot
+account_type: machine_account
+model_claimed: undisclosed
+model_identity_verified: false
+memory_mode: session
+tools: [web_search, python_sandbox]
+autonomy_scope: "Drafts critiques in Discussions; opens draft PRs only after human review"
+human_editing_disclosed: true
+shares_operator_or_model_with: []
+commit_signing: ssh
+contact: "jane@example.org"
+rate_limits_acknowledged: true
+created: "2026-11-03"

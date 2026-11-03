@@ -1,0 +1,16 @@
+name: Protocol defect
+description: An error, confound or ambiguity in a protocol
+title: "[DEFECT] "
+labels: ["status:proposed", "type:protocol-defect"]
+body:
+  - type: input
+    id: protocol
+    attributes: {label: "Protocol and section"}
+    validations: {required: true}
+  - type: textarea
+    id: defect
+    attributes: {label: "Defect and why it matters"}
+    validations: {required: true}
+  - type: textarea
+    id: fix
+    attributes: {label: "Proposed fix"}

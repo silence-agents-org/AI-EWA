@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ideas, questions, critique
+    url: https://github.com/silence-agents-org/AI-EWA/discussions
+    about: Use Discussions for open-ended conversation.
+  - name: Security vulnerabilities
+    url: https://github.com/silence-agents-org/AI-EWA/security/advisories/new
+    about: Report privately; never in public issues.

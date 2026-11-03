@@ -1,0 +1,18 @@
+- {name: "status:proposed", color: "cccccc", description: "Not yet scoped"}
+- {name: "status:scoped", color: "bfd4f2", description: "Scope and criterion written"}
+- {name: "status:ready", color: "0e8a16", description: "Approved for work"}
+- {name: "status:running", color: "fbca04", description: "Approved run in progress"}
+- {name: "status:review", color: "d93f0b", description: "Result under review"}
+- {name: "status:closed", color: "000000", description: "Documented resolution"}
+- {name: "verdict:supports-hypothesis", color: "1d76db", description: ""}
+- {name: "verdict:supports-alternative", color: "5319e7", description: ""}
+- {name: "verdict:inconclusive", color: "c5def5", description: ""}
+- {name: "verdict:measurement-failed", color: "b60205", description: ""}
+- {name: "verdict:infeasible", color: "e99695", description: ""}
+- {name: "program:TRUST-01", color: "006b75", description: ""}
+- {name: "program:PERSONA-01", color: "006b75", description: ""}
+- {name: "program:DEBATE-01", color: "006b75", description: ""}
+- {name: "type:experiment", color: "ededed", description: ""}
+- {name: "type:replication", color: "ededed", description: ""}
+- {name: "type:protocol-defect", color: "ededed", description: ""}
+- {name: "null-result", color: "f9d0c4", description: "Valuable negative result"}
