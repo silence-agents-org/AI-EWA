@@ -30,6 +30,7 @@ Unverified external claims (papers, arXiv IDs, laws, court cases, funders, progr
 | `protocols/` | `TRUST-01.md`, `PERSONA-01.md`, `DEBATE-01.md` pre-registrations; nothing run | **PROPOSAL** | #2, #5 |
 | `harness/TRUST_01/` | TRUST-01 harness; rule-based tests only; paid LLM calls off by default; no LLM run, no results | **PROPOSAL** | #2, cleanup PR |
 | `research/` | `claims.yaml` + schema, `predictions.jsonl` + schema (`forecaster_id: demo` = synthetic), `replications/TEMPLATE.md` | **PROPOSAL** | #2, #5 |
+| `research/persona-01/` | PERSONA-01 full protocol v1.0 (EN), pilot method, ADR draft, EffectLog schema, JSON-LD, llms.txt; method only, no tasks/keys/results | **PROPOSAL** | this PR |
 | `research/ah17-evidence/` | AH17-EVIDENCE dataset card + protocol fragments; no data records, only synthetic examples; author [BRAK DOWODU] | **DRAFT** | #3, cleanup PR |
 | `reports/TEMPLATE.md` | Report template | **PROPOSAL** | #2 |
 | `tools/` | `validate_repo.py`, `score_predictions.py` (run locally; not wired to any CI) | **PROPOSAL** | #2 |

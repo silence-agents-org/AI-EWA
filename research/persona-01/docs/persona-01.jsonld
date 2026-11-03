@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ResearchProject",
+  "name": "PERSONA-01: Identity versus Procedure in Evidence-Grounded Research Assistance",
+  "alternateName": "SILENCE PERSONA-01",
+  "description": "Pre-registered 2x2 factorial protocol (expert identity x verification procedure) testing whether an AI expert persona improves evidence-grounded decisions beyond an identical explicit procedure. Main contrast D-C. Method only; task sets and answer keys are private.",
+  "founder": {"@type": "Person", "name": "Ewa Tchórzewska"},
+  "parentOrganization": {"@type": "Organization", "name": "silence-agents-org", "url": "https://github.com/silence-agents-org"},
+  "url": "https://github.com/silence-agents-org/AI-EWA/tree/main/research/persona-01",
+  "keywords": ["persona prompting", "LLM evaluation", "sycophancy", "evidence-grounded reasoning", "pre-registration", "factorial design", "belief updating"],
+  "inLanguage": "en",
+  "dateCreated": "2026-11-01",
+  "creativeWorkStatus": "Proposed; not run",
+  "subjectOf": {
+    "@type": "Dataset",
+    "name": "PERSONA-01 method artefacts",
+    "description": "Protocol, pilot method, scoring rubric criteria and EffectLog run-record schema. Contains no tasks, answers or results.",
+    "creator": {"@type": "Person", "name": "Ewa Tchórzewska"},
+    "variableMeasured": ["evidence_decision_correct", "unsupported_claim_rate", "citation_support_accuracy", "pressure_induced_error", "appropriate_update", "excessive_abstention", "perceived_expertise"],
+    "measurementTechnique": "2x2 within-item factorial, two conversation branches (pressure-only vs decisive new evidence) forked from the same first answer, blind double rating, mixed-effects logistic regression"
+  }
+}

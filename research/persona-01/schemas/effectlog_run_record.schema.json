@@ -1,0 +1,202 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "persona01/effectlog_run_record.v0.1",
+  "title": "PERSONA-01 EffectLog run record (one per model call)",
+  "description": "Fields from PERSONA-01 protocol v1.0 §9 (EffectLog) plus pilot extensions (prefix x_). Audit trail only; does NOT imply bit-exact reproducibility of external models.",
+  "type": "object",
+  "required": [
+    "run_id",
+    "task_id",
+    "condition_id",
+    "prompt_variant",
+    "prompt_hash",
+    "document_bundle_hash",
+    "model_identifier",
+    "generation_parameters",
+    "timestamp",
+    "response_hash",
+    "branch",
+    "parent_run_id",
+    "retry_status",
+    "scoring_version"
+  ],
+  "properties": {
+    "run_id": {
+      "type": "string",
+      "description": "UUIDv7"
+    },
+    "task_id": {
+      "type": "string",
+      "pattern": "^P0(0[1-9]|1[0-9]|2[0-4])$",
+      "description": "Neutral id; never the class code (M/F/C/S)"
+    },
+    "condition_id": {
+      "enum": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ]
+    },
+    "prompt_variant": {
+      "type": "string",
+      "description": "e.g. A, B-I2, C-P3, D-I1P1"
+    },
+    "prompt_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$",
+      "description": "hash of exact system prompt bytes"
+    },
+    "document_bundle_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "model_identifier": {
+      "type": "object",
+      "required": [
+        "provider",
+        "model",
+        "snapshot_or_version"
+      ],
+      "properties": {
+        "provider": {
+          "type": "string"
+        },
+        "model": {
+          "type": "string"
+        },
+        "snapshot_or_version": {
+          "type": "string"
+        },
+        "endpoint": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        }
+      }
+    },
+    "generation_parameters": {
+      "type": "object",
+      "properties": {
+        "temperature": {
+          "type": "number"
+        },
+        "top_p": {
+          "type": "number"
+        },
+        "max_output_tokens": {
+          "type": "integer"
+        },
+        "reasoning_effort": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "seed": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "tools": {
+          "type": "array",
+          "maxItems": 0
+        }
+      }
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "description": "ISO-8601 with offset"
+    },
+    "response_hash": {
+      "type": "string",
+      "pattern": "^sha256:[0-9a-f]{64}$"
+    },
+    "branch": {
+      "enum": [
+        "initial",
+        "pressure",
+        "evidence"
+      ]
+    },
+    "parent_run_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "null for initial; initial run_id for pressure/evidence (both fork from the SAME stored turn-1 response)"
+    },
+    "retry_status": {
+      "type": "object",
+      "required": [
+        "attempt",
+        "outcome"
+      ],
+      "properties": {
+        "attempt": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "outcome": {
+          "enum": [
+            "ok",
+            "api_error_retried",
+            "refused",
+            "truncated",
+            "failed_final"
+          ]
+        },
+        "error_code": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "scoring_version": {
+      "type": "string",
+      "description": "rubric + answer_keys manifest hash"
+    },
+    "x_rep": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 3
+    },
+    "x_block_id": {
+      "type": "string",
+      "description": "interleaved block for run order"
+    },
+    "x_usage": {
+      "type": "object",
+      "properties": {
+        "input_tokens": {
+          "type": "integer"
+        },
+        "cached_input_tokens": {
+          "type": "integer"
+        },
+        "output_tokens": {
+          "type": "integer"
+        },
+        "reasoning_tokens": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        }
+      }
+    },
+    "x_latency_ms": {
+      "type": "integer"
+    },
+    "x_response_text_ref": {
+      "type": "string",
+      "description": "path to stored response; text not inlined"
+    }
+  },
+  "additionalProperties": false
+}
