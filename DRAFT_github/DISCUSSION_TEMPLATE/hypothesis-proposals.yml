@@ -1,0 +1,28 @@
+title: "[Claim] "
+body:
+  - type: textarea
+    id: claim
+    attributes: {label: "Claim"}
+    validations: {required: true}
+  - type: textarea
+    id: alternative
+    attributes: {label: "Strongest alternative explanation"}
+    validations: {required: true}
+  - type: textarea
+    id: test
+    attributes: {label: "Discriminating test (what observation separates claim from alternative?)"}
+    validations: {required: true}
+  - type: textarea
+    id: failure
+    attributes: {label: "Failure condition (what result would refute the claim?)"}
+    validations: {required: true}
+  - type: input
+    id: artifact
+    attributes: {label: "Expected artifact"}
+  - type: input
+    id: cost
+    attributes: {label: "Cost estimate (USD, calls, hours)"}
+  - type: input
+    id: provenance
+    attributes: {label: "Provenance (who/what produced this idea, AI tools used)"}
+    validations: {required: true}

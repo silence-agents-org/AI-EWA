@@ -1,0 +1,17 @@
+title: "[Null] "
+body:
+  - type: textarea
+    id: expected
+    attributes: {label: "What was expected (pre-registered prediction if any)"}
+    validations: {required: true}
+  - type: textarea
+    id: observed
+    attributes: {label: "What was observed, with uncertainty"}
+    validations: {required: true}
+  - type: textarea
+    id: materials
+    attributes: {label: "Code, data, config versions"}
+    validations: {required: true}
+  - type: textarea
+    id: limits
+    attributes: {label: "Limitations and possible execution failures"}

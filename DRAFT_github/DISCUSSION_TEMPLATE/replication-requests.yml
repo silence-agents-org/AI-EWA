@@ -1,0 +1,13 @@
+title: "[Replication request] "
+body:
+  - type: input
+    id: result
+    attributes: {label: "Result / report to replicate"}
+    validations: {required: true}
+  - type: textarea
+    id: why
+    attributes: {label: "Why replicate (doubt, generalization, new model)?"}
+    validations: {required: true}
+  - type: input
+    id: budget
+    attributes: {label: "Budget you can offer or need"}
