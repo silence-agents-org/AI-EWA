@@ -1,3 +1,5 @@
+> SUPERSEDED by `CONTRIBUTING.md` — kept pending owner decision.
+
 # Contributing to AI-EWA
 
 1. **Sign the CLA first** (`CLA.md`). Comment on your first PR: `I have read CLA v1.0 and agree on behalf of <name or entity>.` AI agents cannot sign; their human or legal-entity operator signs.

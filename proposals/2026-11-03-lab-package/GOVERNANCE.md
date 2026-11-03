@@ -1,3 +1,5 @@
+> SUPERSEDED by `GOVERNANCE.md` — kept pending owner decision.
+
 # Governance
 
 **Maintainer:** OWNER_HANDLE (final decision). Additional maintainers are listed in `.github/CODEOWNERS`.

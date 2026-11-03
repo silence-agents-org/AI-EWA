@@ -1,3 +1,4 @@
+# SUPERSEDED by `harness/TRUST_01/trust01/analysis.py` — kept pending owner decision.
 """Paired agency and loss effects with percentile bootstrap CIs."""
 from __future__ import annotations
 

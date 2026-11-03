@@ -1,3 +1,5 @@
+> SUPERSEDED by `SECURITY.md` — kept pending owner decision.
+
 # Security policy
 
 ## Reporting

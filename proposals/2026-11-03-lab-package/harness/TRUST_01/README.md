@@ -1,3 +1,5 @@
+> SUPERSEDED by `harness/TRUST_01/README.md` — kept pending owner decision.
+
 # TRUST-01 harness
 pip install -e ".[test]" && pytest -q                   # rule-based only, no keys
 trust01-run --config config.yaml --out runs/rule.jsonl
