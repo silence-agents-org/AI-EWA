@@ -3,7 +3,7 @@
   "@type": "ResearchProject",
   "name": "PERSONA-01: Identity versus Procedure in Evidence-Grounded Research Assistance",
   "alternateName": "SILENCE PERSONA-01",
-  "description": "Pre-registered 2x2 factorial protocol (expert identity x verification procedure) testing whether an AI expert persona improves evidence-grounded decisions beyond an identical explicit procedure. Main contrast D-C. Method only; task sets and answer keys are private.",
+  "description": "Proposed pre-registration (not yet registered): 2x2 factorial protocol (expert identity x verification procedure) testing whether an AI expert persona improves evidence-grounded decisions beyond an identical explicit procedure. Main contrast D-C. Method only; task sets and answer keys are private.",
   "founder": {"@type": "Person", "name": "Ewa Tchórzewska"},
   "parentOrganization": {"@type": "Organization", "name": "silence-agents-org", "url": "https://github.com/silence-agents-org"},
   "url": "https://github.com/silence-agents-org/AI-EWA/tree/main/research/persona-01",

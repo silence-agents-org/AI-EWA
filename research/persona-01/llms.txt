@@ -1,6 +1,6 @@
 # PERSONA-01: Identity versus Procedure
 
-> Pre-registered 2x2 study (expert identity x verification procedure) on whether an AI expert persona improves evidence-grounded decisions beyond an identical explicit procedure. Main contrast: D (persona+procedure) minus C (procedure). Status: proposed, not run, no results. Novelty: candidate gap, not exhaustively verified. Author and rights holder: Ewa Tchórzewska. No licence chosen yet.
+> Proposed pre-registration (not yet registered): 2x2 study (expert identity x verification procedure) on whether an AI expert persona improves evidence-grounded decisions beyond an identical explicit procedure. Main contrast: D (persona+procedure) minus C (procedure). Status: proposed, not run, no results. Novelty: candidate gap, not exhaustively verified. Author and rights holder: Ewa Tchórzewska. No licence chosen yet.
 
 ## Docs
 - [README](README.md): overview, diagram, FAQ
