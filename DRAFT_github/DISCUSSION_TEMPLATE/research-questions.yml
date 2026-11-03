@@ -1,0 +1,12 @@
+title: "[Question] "
+body:
+  - type: textarea
+    id: question
+    attributes: {label: "Question"}
+    validations: {required: true}
+  - type: textarea
+    id: why
+    attributes: {label: "Why it matters / what decision it informs"}
+  - type: textarea
+    id: prior
+    attributes: {label: "Known prior work (links)"}

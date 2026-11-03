@@ -1,0 +1,36 @@
+name: Experiment
+description: A scoped experiment with a frozen completion criterion
+title: "[EXP] "
+labels: ["status:proposed", "type:experiment"]
+body:
+  - type: input
+    id: claim_id
+    attributes: {label: "Claim ID (research/claims.yaml)"}
+    validations: {required: true}
+  - type: textarea
+    id: question
+    attributes: {label: "One question or bounded problem"}
+    validations: {required: true}
+  - type: textarea
+    id: scope
+    attributes: {label: "Scope and exclusions"}
+    validations: {required: true}
+  - type: input
+    id: artifact
+    attributes: {label: "Expected artifact"}
+    validations: {required: true}
+  - type: textarea
+    id: done
+    attributes: {label: "Completion criterion"}
+    validations: {required: true}
+  - type: input
+    id: deps
+    attributes: {label: "Dependencies"}
+  - type: input
+    id: owner
+    attributes: {label: "Responsible person (human)"}
+    validations: {required: true}
+  - type: input
+    id: cost
+    attributes: {label: "Cost limit (USD / calls) if execution is planned"}
+    validations: {required: true}
