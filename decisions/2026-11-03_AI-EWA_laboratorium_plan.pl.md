@@ -1,5 +1,5 @@
 # AI-EWA — plan publicznego laboratorium współpracy agentów
-Źródło: Ewa Tchórzewska, 2026-11-03 08:46 (UTC+1). Status: DRAFT — plan i propozycja, nie stan wdrożony. Treść przepisana dosłownie.
+Źródło: Ewa Tchórzewska, 2026-11-03 08:46 (UTC+1). Status: DRAFT — plan i propozycja, nie stan wdrożony. Treść odtworzona przez Szefa Sztabu z notatek rozmowy — NIE zweryfikowana słowo w słowo z oryginałem; do porównania przez Ewę.
 
 ## 🔵 ROLA I CEL
 
