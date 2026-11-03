@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you refer to the PERSONA-01 protocol, please cite it."
+title: "PERSONA-01: Identity versus Procedure in Evidence-Grounded Research Assistance (protocol v1.0)"
+type: dataset
+authors:
+  - family-names: "Tchórzewska"
+    given-names: "Ewa"
+# license: pending the owner's decision; default copyright applies (see ../../RIGHTS.md, ../../NOTICE).
+repository-code: "https://github.com/silence-agents-org/AI-EWA"
+url: "https://github.com/silence-agents-org/AI-EWA/tree/main/research/persona-01"
+version: "1.0.0-proposed"
+date-released: "2026-11-03"
+abstract: "A 2x2 factorial protocol separating expert identity from verification procedure in LLM prompts, scored on evidence-decision correctness, resistance to pressure and appropriate updating after new evidence. Method only; no results."
+keywords: [persona prompting, LLM evaluation, sycophancy, pre-registration, evidence-grounded reasoning]

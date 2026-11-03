@@ -1,0 +1,14 @@
+# PERSONA-01: Identity versus Procedure
+
+> Proposed pre-registration (not yet registered): 2x2 study (expert identity x verification procedure) on whether an AI expert persona improves evidence-grounded decisions beyond an identical explicit procedure. Main contrast: D (persona+procedure) minus C (procedure). Status: proposed, not run, no results. Novelty: candidate gap, not exhaustively verified. Author and rights holder: Ewa Tchórzewska. No licence chosen yet.
+
+## Docs
+- [README](README.md): overview, diagram, FAQ
+- [Protocol v1.0](PROTOCOL_v1.0.md): conditions, task classes, branches, metrics, analysis plan
+- [Pilot method v0.1](PILOT_METHOD_v0.1.md): pilot structure and scoring rubric (no tasks or keys)
+- [ADR draft](ADR-DRAFT_identity_vs_procedure.md): decision record
+- [EffectLog schema](schemas/effectlog_run_record.schema.json): per-call audit record (pilot schema v0.1, pilot task IDs only)
+- [JSON-LD](docs/persona-01.jsonld): schema.org metadata
+
+## Not included
+Task texts, documents, answer keys, prompt paraphrases and results are private (held-out test set).

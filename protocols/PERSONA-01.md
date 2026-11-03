@@ -1,3 +1,5 @@
+> SUPERSEDED — kanoniczna wersja: `research/persona-01/PROTOCOL_v1.0.md` (Ewa's decision, 2026-11-03: one protocol). Kept as a historical sketch, not deleted (deletion only on Ewa's explicit order); its hash/canary, Cohen's kappa and guardrail items were carried over; differences were decided by Ewa on 2026-11-03, see "Decisions (Ewa, 2026-11-03)" in the canonical file; map: docs/INDEX.md.
+
 # PERSONA-01 — Persona or procedure? (pre-registration v1.0, PROPOSED)
 
 ## Question
