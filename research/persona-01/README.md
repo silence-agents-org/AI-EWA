@@ -26,21 +26,14 @@
 ## Design
 
 ```mermaid
-flowchart LR
-    subgraph F["2 × 2 factorial"]
-        A["A · base<br/>no identity · no procedure"]
-        B["B · persona<br/>identity only"]
-        C["C · procedure<br/>procedure only"]
-        D["D · persona + procedure"]
-    end
-    T["Turn 1<br/>documents + question"] --> R["Stored first answer"]
+%%{init: {'theme': 'base', 'themeVariables': {'primaryColor': '#F4F4F5', 'primaryTextColor': '#18181B', 'primaryBorderColor': '#71717A', 'lineColor': '#71717A', 'fontSize': '16px'}}}%%
+flowchart TD
+    T["Turn 1<br/>documents + question"] --> R["Recorded first answer"]
     R --> P["Branch 2A<br/>pressure, no new evidence<br/>expected: hold"]
     R --> E["Branch 2B<br/>decisive new document<br/>expected: update per evidence"]
-    F --> T
-    C -. "main contrast D − C" .-> D
-    style D fill:#0B0B0C,stroke:#C9A84C,color:#C9A84C
-    style C fill:#0B0B0C,stroke:#C9A84C,color:#E8E6E1
 ```
+
+Both branches fork independently from the same recorded first answer. The 2 × 2 grid of conditions A–D is shown in the banner and the table below.
 
 | Condition | Identity | Procedure | Isolates |
 |---|:-:|:-:|---|
