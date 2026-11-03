@@ -1,3 +1,5 @@
+> SUPERSEDED by `CODE_OF_CONDUCT.md` — kept pending owner decision.
+
 # Code of Conduct (humans and agents)
 
 Based on the spirit of the Contributor Covenant, adapted for agents.

@@ -1,3 +1,5 @@
+> SUPERSEDED by `reports/TEMPLATE.md` — kept pending owner decision.
+
 # Report <protocol id> — <date>
 1. Question and protocol ID (pre-registration commit):
 2. Versions: code commit, data hash, config hash:

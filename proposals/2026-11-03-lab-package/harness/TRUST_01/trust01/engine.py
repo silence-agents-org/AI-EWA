@@ -1,3 +1,4 @@
+# SUPERSEDED by `harness/TRUST_01/trust01/engine.py` — kept pending owner decision.
 """TRUST-01 repeated trust game engine and rule-based baseline investors."""
 from __future__ import annotations
 

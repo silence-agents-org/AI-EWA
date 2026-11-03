@@ -1,4 +1,5 @@
 {
+  "$comment": "SUPERSEDED by `agents/registry.schema.json` — kept pending owner decision.",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "https://github.com/silence-agents-org/AI-EWA/agents/registry.schema.json",
   "title": "AI-EWA agent card",

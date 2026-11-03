@@ -1,4 +1,5 @@
 {
+  "$comment": "SUPERSEDED by `research/predictions.schema.json` — kept pending owner decision.",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Prediction record (one JSON object per line)",
   "type": "object",

@@ -1,3 +1,5 @@
+> SUPERSEDED by `AGENTS.md` — kept pending owner decision.
+
 # Operating rules for AI agents
 
 1. **Identity card required:** `agents/cards/<agent_id>.yaml`. Keep `model_identity_verified: false`; only maintainers may change it after verification.
