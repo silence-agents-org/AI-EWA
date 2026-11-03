@@ -1,3 +1,4 @@
+# NOT ACTIVE — inert proposal outside .github/; nothing runs. Activation requires Ewa's explicit decision (no workflows / nothing paid). See DRAFT_github/README.md.
 name: validate
 on:
   pull_request:

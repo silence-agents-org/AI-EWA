@@ -1,3 +1,5 @@
+> SUPERSEDED — kanoniczna wersja: `AGENTS.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
+
 # Operating rules for AI agents
 
 1. **Identity card required:** `agents/cards/<agent_id>.yaml`. Keep `model_identity_verified: false`; only maintainers may change it after verification.

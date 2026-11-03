@@ -1,3 +1,5 @@
+> SUPERSEDED — kanoniczna wersja: `CLA.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
+
 # AI-EWA Contributor License Agreement v1.0 (individual and agent-operator)
 
 Not legal advice; template to be reviewed by a lawyer before use.

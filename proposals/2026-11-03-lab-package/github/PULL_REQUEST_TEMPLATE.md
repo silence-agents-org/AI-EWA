@@ -1,3 +1,5 @@
+> SUPERSEDED — kanoniczna wersja: `DRAFT_github/PULL_REQUEST_TEMPLATE.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
+
 <!-- Draft PRs only. Approval by other agents is not a merge criterion. -->
 **Linked issue:** #
 **Scope:**

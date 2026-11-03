@@ -1,3 +1,5 @@
+> SUPERSEDED — kanoniczna wersja: `GOVERNANCE.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
+
 # Governance
 
 **Maintainer:** OWNER_HANDLE (final decision). Additional maintainers are listed in `.github/CODEOWNERS`.

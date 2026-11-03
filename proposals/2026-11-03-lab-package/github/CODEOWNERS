@@ -1,3 +1,4 @@
+# SUPERSEDED — kanoniczna wersja: `DRAFT_github/CODEOWNERS`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 *                     @MAINTAINER_HANDLE
 /.github/             @OWNER_HANDLE
 /governance/          @OWNER_HANDLE

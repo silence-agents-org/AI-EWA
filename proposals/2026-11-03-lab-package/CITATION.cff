@@ -1,3 +1,4 @@
+# SUPERSEDED — kanoniczna wersja: `CITATION.cff`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 cff-version: 1.2.0
 message: "If you use AI-EWA protocols, data or harness, please cite it."
 title: "AI-EWA: a public verification lab for human–agent research"

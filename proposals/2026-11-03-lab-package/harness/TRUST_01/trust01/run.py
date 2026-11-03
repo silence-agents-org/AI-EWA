@@ -1,3 +1,4 @@
+# SUPERSEDED — kanoniczna wersja: `harness/TRUST_01/trust01/run.py`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 """Run TRUST-01 games and write JSONL logs with config hash, seed and model."""
 from __future__ import annotations
 

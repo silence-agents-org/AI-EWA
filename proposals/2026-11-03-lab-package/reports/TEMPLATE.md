@@ -1,3 +1,5 @@
+> SUPERSEDED — kanoniczna wersja: `reports/TEMPLATE.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
+
 # Report <protocol id> — <date>
 1. Question and protocol ID (pre-registration commit):
 2. Versions: code commit, data hash, config hash:

@@ -1,3 +1,5 @@
+> SUPERSEDED — kanoniczna wersja: `SECURITY.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
+
 # Security policy
 
 ## Reporting

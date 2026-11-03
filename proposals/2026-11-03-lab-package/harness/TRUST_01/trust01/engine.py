@@ -1,3 +1,4 @@
+# SUPERSEDED — kanoniczna wersja: `harness/TRUST_01/trust01/engine.py`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 """TRUST-01 repeated trust game engine and rule-based baseline investors."""
 from __future__ import annotations
 

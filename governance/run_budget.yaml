@@ -1,3 +1,5 @@
+# PROPOSED caps only. Standing rule: nothing paid without Ewa's explicit decision — until she records
+# an approval in governance/decision-log.md, the effective paid budget is 0.
 version: 1
 defaults:
   max_usd_per_run: 25
@@ -17,5 +19,5 @@ loops:
   max_agents_per_debate: 5
 approval:
   required_for_any_paid_run: true
-  approver: OWNER_HANDLE
+  approver: "@ev-silence-owner"  # Ewa Tchórzewska
   record_in: governance/decision-log.md

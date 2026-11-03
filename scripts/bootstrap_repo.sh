@@ -1,5 +1,18 @@
 #!/usr/bin/env bash
+# PROPOSAL ONLY — DO NOT RUN without the owner's explicit approval (Ewa Tchórzewska).
+# It changes repository settings, creates labels, sets Actions permissions and creates an active ruleset on the default branch.
+# It reads .github/labels.yml and edits .github/workflows/*.yml, which do not exist yet (content is staged in DRAFT_github/).
 # Configure AI-EWA with gh CLI. Requires: gh auth login (owner/admin), python3 with pyyaml.
+# =====================================================================================
+# DO NOT RUN without Ewa's explicit decision. / NIE URUCHAMIAĆ bez wyraźnej decyzji Ewy.
+# Status: PROPOSAL (see docs/INDEX.md). This script would change repository settings.
+# Safety guard: it exits immediately unless AIEWA_BOOTSTRAP_APPROVED_BY_EWA=yes is set,
+# which may only be done after Ewa's decision is recorded in governance/decision-log.md.
+# =====================================================================================
+if [ "${AIEWA_BOOTSTRAP_APPROVED_BY_EWA:-}" != "yes" ]; then
+  echo "Refusing to run: DO NOT RUN without Ewa's explicit decision (set AIEWA_BOOTSTRAP_APPROVED_BY_EWA=yes only after it is recorded)." >&2
+  exit 1
+fi
 set -euo pipefail
 REPO="${REPO:-silence-agents-org/AI-EWA}"
 
