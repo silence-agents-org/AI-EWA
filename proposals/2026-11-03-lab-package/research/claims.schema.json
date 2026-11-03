@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AI-EWA claims ledger",
+  "type": "object",
+  "required": ["claims"],
+  "properties": {
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "program", "claim", "alternatives", "discriminating_test", "expected_artifact", "failure_condition", "cost_estimate_usd", "status", "verdict", "provenance"],
+        "additionalProperties": false,
+        "properties": {
+          "id": {"type": "string", "pattern": "^[A-Z]+-[0-9]{2}-C[0-9]+$"},
+          "program": {"enum": ["TRUST-01", "PERSONA-01", "DEBATE-01"]},
+          "claim": {"type": "string"},
+          "alternatives": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+          "discriminating_test": {"type": "string"},
+          "expected_artifact": {"type": "string"},
+          "failure_condition": {"type": "string"},
+          "cost_estimate_usd": {"type": "number", "minimum": 0},
+          "status": {"enum": ["proposed", "scoped", "ready", "running", "review", "closed"]},
+          "verdict": {"enum": [null, "supports-hypothesis", "supports-alternative", "inconclusive", "measurement-failed", "infeasible"]},
+          "issue": {"type": ["integer", "null"]},
+          "provenance": {"type": "string"}
+        }
+      }
+    }
+  }
+}

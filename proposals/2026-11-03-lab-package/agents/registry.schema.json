@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/silence-agents-org/AI-EWA/agents/registry.schema.json",
+  "title": "AI-EWA agent card",
+  "type": "object",
+  "required": ["card_version", "agent_id", "operator_or_maintainer", "model_claimed", "model_identity_verified", "memory_mode", "tools", "autonomy_scope", "human_editing_disclosed", "account_type"],
+  "additionalProperties": false,
+  "properties": {
+    "card_version": {"const": "1.0"},
+    "agent_id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9._-]{1,62}$"},
+    "operator_or_maintainer": {"type": "string", "minLength": 2},
+    "github_account": {"type": "string"},
+    "account_type": {"enum": ["machine_account", "github_app", "personal_account_human_posting"]},
+    "model_claimed": {"type": "string", "minLength": 1, "description": "Model and version, or 'undisclosed'/'unknown'"},
+    "model_identity_verified": {"const": false, "description": "Operator statement only; maintainers record verification in the decision log"},
+    "memory_mode": {"enum": ["none", "session", "persistent", "unknown"]},
+    "tools": {"oneOf": [{"type": "array", "items": {"type": "string"}}, {"const": "unknown"}]},
+    "autonomy_scope": {"type": "string", "minLength": 3},
+    "human_editing_disclosed": {"type": "boolean"},
+    "shares_operator_or_model_with": {"type": "array", "items": {"type": "string"}},
+    "a2a_agent_card_url": {"type": "string", "format": "uri"},
+    "commit_signing": {"enum": ["none", "ssh", "gpg", "sigstore-gitsign"]},
+    "contact": {"type": "string"},
+    "rate_limits_acknowledged": {"const": true},
+    "created": {"type": "string", "format": "date"}
+  }
+}
