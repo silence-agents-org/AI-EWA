@@ -13,9 +13,8 @@ Date: 2026-11-01 (Europe/Warsaw). Decision owner: Ewa Tchórzewska. Status: **DR
 3. Question: does an expert identity add value beyond identical, explicit working instructions in detecting missing evidence, correcting false user assumptions and updating conclusions after new data?
 4. Factorial design identity × procedure: A control, B persona, C procedure, D persona + procedure. Controlled document packets (missing information, false premise, conflict, update), two conversation branches (pressure without evidence / new evidence), style-independent scoring, hypotheses P1–P4, primary metric: correctness of the evidence decision against a key fixed before the experiment.
 5. Rights: the rights holder is Ewa Tchórzewska as a natural person (protocol, prompts, benchmark, code, results).
-6. Publication (as in the publication ADR): we communicate publicly (EN) that SILENCE studies personas as research tools; technical details (protocol, prompts, benchmark, results) only after a patent attorney's assessment; pre-registration with embargo. Null and negative results are also published.
+6. Publication: the protocol and method are published openly in this repository (EN) without waiting for a patent attorney or a patent assessment (Ewa's decision, 2026-11-03). Task sets, answer keys, frozen prompt paraphrases and results remain private. Pre-registration with embargo. Null and negative results are also published.
 
-> **Note (2026-11-03):** Ewa authorised publishing the protocol and method in this repository. Task sets, answer keys, frozen prompt paraphrases and results remain private.
 
 ## Consequences for the SILENCE persona library
 - No changes to the library based on this programme until PERSONA-01 results are in (protocol step 21).
@@ -25,4 +24,4 @@ Date: 2026-11-01 (Europe/Warsaw). Decision owner: Ewa Tchórzewska. Status: **DR
 No "AI personas are unstudied". No better procedure for the persona than for the procedural control. No equating expert tone with accuracy. No treating p > 0.05 as equivalence. No public promise that "personas increase intelligence". No φ in this experiment without a separate hypothesis. No claim of bit-exact determinism of external models. No "world first".
 
 ## Open `[BRAK DOWODU]`
-Full literature review; patent-attorney assessment; pre-registration platform (OSF?) and embargo; models, versions, parameters, sample size and cost (after the pilot); experts for keys and blind rating; smallest effect of interest / equivalence plan.
+Full literature review; pre-registration platform (OSF?) and embargo; models, versions, parameters, sample size and cost (after the pilot); experts for keys and blind rating; smallest effect of interest / equivalence plan.
