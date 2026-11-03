@@ -1,0 +1,44 @@
+claims:
+  - id: TRUST-01-C1
+    program: TRUST-01
+    claim: "LLM investors reduce transfers more after an intentional loss than after an identical random loss, with the future-payout rule held constant."
+    alternatives:
+      - "Drop reflects expectation of further losses (ruled out by announced fixed future rule)."
+      - "Drop reflects wording differences between conditions (lexical confound)."
+      - "Drop reflects the loss itself, independent of agency (tested by random vs no_loss)."
+    discriminating_test: "Paired delta(intentional) - delta(random) with matched outcomes, neutral names, counterbalanced order."
+    expected_artifact: "reports/TRUST-01-pilot.md + JSONL logs"
+    failure_condition: "95% CI of the agency effect includes 0 in the primary model set."
+    cost_estimate_usd: 40
+    status: proposed
+    verdict: null
+    issue: null
+    provenance: "Owner strategy memo; Falk & Fischbacher 2006; Xie et al. 2024"
+  - id: PERSONA-01-C1
+    program: PERSONA-01
+    claim: "Accuracy gains attributed to identity personas come from embedded procedural instructions, not from the identity."
+    alternatives:
+      - "Identity alone shifts the answer distribution."
+      - "Gains are prompt-length or formatting artifacts."
+    discriminating_test: "2x2: identity persona (yes/no) x procedural instruction (yes/no) on a held-out set."
+    expected_artifact: "reports/PERSONA-01.md"
+    failure_condition: "Identity-only condition beats neutral by >= 2 pp with CI excluding 0."
+    cost_estimate_usd: 60
+    status: proposed
+    verdict: null
+    issue: null
+    provenance: "Owner strategy memo; Zheng et al. 2024"
+  - id: DEBATE-01-C1
+    program: DEBATE-01
+    claim: "At an equal token budget, multi-agent debate does not beat self-consistency majority voting."
+    alternatives:
+      - "Debate helps only with heterogeneous models."
+      - "Debate helps only on hard items."
+    discriminating_test: "Compute-matched comparison on held-out items, stratified by difficulty and model heterogeneity."
+    expected_artifact: "reports/DEBATE-01.md + Pareto plot data"
+    failure_condition: "Debate exceeds self-consistency by >= 2 pp at matched budget with CI excluding 0."
+    cost_estimate_usd: 120
+    status: proposed
+    verdict: null
+    issue: null
+    provenance: "Huang et al. 2023; arXiv 2605.01566; arXiv 2605.00914"

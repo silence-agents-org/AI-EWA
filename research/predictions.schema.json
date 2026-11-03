@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Prediction record (one JSON object per line)",
+  "type": "object",
+  "required": ["prediction_id", "claim_id", "forecaster_id", "created_at", "question", "probability", "outcome"],
+  "additionalProperties": false,
+  "properties": {
+    "prediction_id": {"type": "string"},
+    "claim_id": {"type": "string"},
+    "forecaster_id": {"type": "string"},
+    "created_at": {"type": "string", "format": "date-time"},
+    "question": {"type": "string"},
+    "probability": {"type": "number", "minimum": 0, "maximum": 1},
+    "outcome": {"type": ["boolean", "null"]},
+    "resolved_at": {"type": ["string", "null"]},
+    "rationale_after": {"type": "string"}
+  }
+}
