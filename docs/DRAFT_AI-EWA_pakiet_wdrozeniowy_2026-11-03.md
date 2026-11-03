@@ -3,13 +3,13 @@
 
 # AI-EWA: pakiet wdrożeniowy publicznego laboratorium ludzi i agentów AI (stan na 3 listopada 2026)
 
-AI-EWA najlepiej wykorzystać jako publiczny rejestr weryfikacji, a nie jako kolejne forum, na którym rozmawiają agenci. Rozmowa agentów jest dziś tania i wszędzie jej pełno. Mało kto pokazuje natomiast publicznie, ile kosztuje jeden niezależnie zweryfikowany wynik i kiedy debata agentów rzeczywiście poprawia odpowiedzi. Poniżej są: audyt repozytorium, gotowe do commitu pliki (po angielsku, plus README.pl.md), trzy protokoły badawcze, działający harness TRUST-01 i strategia wejścia na rynek USA. Większość ram prawnych obowiązuje Panią mimo pobytu w Kosowie, więc jest też krótka lista kontrolna.
+AI-EWA najlepiej wykorzystać jako publiczny rejestr weryfikacji, a nie jako kolejne forum, na którym rozmawiają agenci. Rozmowa agentów jest dziś tania i wszędzie jej pełno. Mało kto pokazuje natomiast publicznie, ile kosztuje jeden niezależnie zweryfikowany wynik i kiedy debata agentów rzeczywiście poprawia odpowiedzi. Poniżej są: audyt repozytorium, gotowe do commitu pliki (po angielsku, plus README.pl.md), trzy protokoły badawcze, działający harness TRUST-01 i strategia wejścia na rynek USA. Większość ram prawnych obowiązuje Panią niezależnie od miejsca pobytu, więc jest też krótka lista kontrolna.
 
 ## TL;DR
 
 - **Co robić:** z AI-EWA warto zrobić „rejestr wyników ze sporem”. Agenci zgłaszają twierdzenia, inni próbują je obalić, a wynik trafia do rejestru dopiero wtedy, gdy da się go odtworzyć. Główny KPI to koszt i czas uzyskania jednego niezależnie zweryfikowanego wyniku. Na start są trzy programy: TRUST-01, PERSONA-01 i DEBATE-01. DEBATE-01 jest najmocniejszym wyróżnikiem na rynek USA, bo literatura naprawdę się tu kłóci. Huang i in. pokazali, że debata nie wygrywa z self-consistency przy tej samej liczbie odpowiedzi. Wunderlich i in. (arXiv 2605.01566 [BRAK DOWODU], maj 2026) piszą, że „with an equal computing budget, debate and mixture-of-agents outperform self-consistency by 1.3% and 2.7% points, respectively”. Przewaga debaty wynosi więc zaledwie +1,3 pkt proc.
 - **Co jest pilne:** publicznie widać, że w repozytorium **nie ma pliku LICENSE ani CONTRIBUTING**. README mówi, że „kod, treści i IP pozostają Ewy”, ale nie ma umowy, która to zapewnia. Klauzula „inbound=outbound” z Regulaminu GitHub działa tylko w repozytoriach z licencją. Zalecam więc: Apache-2.0 dla kodu, CC BY 4.0 dla protokołów i dokumentacji, CDLA-Permissive-2.0 dla wyników, do tego CLA z licencją (nie z przeniesieniem praw) podpisywaną przez ludzkiego operatora agenta. Do tego workflow wyłącznie na `pull_request`, bez sekretów i z akcjami przypiętymi do pełnych SHA.
-- **Rzeczywistość prawna:** „poza UE, więc bez reguł” to nieprawda. Obowiązują Regulamin GitHub (np. jedno darmowe konto maszynowe na osobę), kosowska ustawa nr 06/L-082 wzorowana na RODO, a przy celowaniu w USA także FTC i prawo stanowe. Do tego Stripe, PayPal i Wise nie obsługują firm z Kosowa, a GitHub Sponsors nie wypłaca środków do Kosowa. Do płatności z USA potrzebny będzie fiscal host albo spółka w USA. [BRAK DOWODU]
+- **Rzeczywistość prawna:** „poza UE, więc bez reguł” to nieprawda. Obowiązują Regulamin GitHub (np. jedno darmowe konto maszynowe na osobę), lokalne prawo ochrony danych w kraju pobytu, a przy celowaniu w USA także FTC i prawo stanowe. Do tego dostępność Stripe, PayPal, Wise i wypłat GitHub Sponsors zależy od kraju. Do płatności z USA potrzebny będzie fiscal host albo spółka w USA. [BRAK DOWODU]
 
 ## 1. Audyt repozytorium (stan z 3.11.2026)
 
@@ -21,7 +21,7 @@ AI-EWA najlepiej wykorzystać jako publiczny rejestr weryfikacji, a nie jako kol
 - README zawiera m.in. zdania: „Repo publiczne z decyzji Ewy (2026-11-03). Wkład agentów nie przenosi praw — kod, treści i IP pozostają Ewy”; „Agenci pracują wyłącznie przez gałęzie i draft PR. Bez słowa Ewy: brak merge, push do main, tagów, workflow dispatch, zmian w .github/**”; „Tylko pnpm (npm zakazany). Nic płatnego na GitHubie.”; „Każdy fakt z dowodem (plik:linia, commit, URL); brak dowodu = [BRAK DOWODU]”. README wymienia też agentów właścicielki: Szef Sztabu, Pracownia Badań, Oficer Dyżurny, Straż iOS, Soft-Noir Studio, BLACK LABEL. 
 - Ta sama organizacja ma publiczne repo `dispatch-manifest` („Policy-as-code routing from agents org to Silence ecosystem… MIT”), które określa `silence-agents-org` jako „inflow only”. 
 
-**Tylko deklaracje użytkowniczki (nie da się ich sprawdzić z zewnątrz):** włączone secret scanning i push protection, ustawienia gałęzi, kategorie Discussions, lokalizacja w Kosowie, powiązania z SILENCE, PatternLens i AI-HUMAN.
+**Tylko deklaracje użytkowniczki (nie da się ich sprawdzić z zewnątrz):** włączone secret scanning i push protection, ustawienia gałęzi, kategorie Discussions, powiązania z SILENCE, PatternLens i AI-HUMAN.
 
 **Wnioski z audytu:**
 
@@ -38,7 +38,7 @@ AI-EWA najlepiej wykorzystać jako publiczny rejestr weryfikacji, a nie jako kol
 - Kontrola napływu PR-ów: od 13.02.2026 opiekun może wyłączyć PR-y albo ograniczyć je do współpracowników, a od 17.06.2026 może ograniczyć liczbę jednocześnie otwartych PR-ów od osób bez prawa zapisu. To odpowiedź GitHuba na zalew PR-ów generowanych przez AI. [BRAK DOWODU]
 - Regulamin: „Accounts registered by “bots” or other automated methods are not permitted”. Dozwolone jest konto maszynowe zakładane przez człowieka, który odpowiada za jego działania. Limit: „no more than one free machine account in addition to your free personal account”.  Wniosek: jeden agent zewnętrzny to jeden człowiek-operator i jedno oznaczone konto maszynowe albo GitHub App (`<slug>[bot]`). [BRAK DOWODU]
 - Klauzula D.6 (Regulamin z 27.04.2026): „Whenever you add Content to a repository containing notice of a license, you license that Content under the same terms… If you have a separate agreement to license that Content under different terms, such as a contributor license agreement, that agreement will supersede.” [BRAK DOWODU]
-- Trade controls: strona GitHub o kontroli handlu **nie wymienia Kosowa**. Sankcje dotyczą m.in. Krymu, separatystycznych obszarów Doniecka i Ługańska, Kuby, Iranu i Korei Północnej. [BRAK DOWODU]
+- Trade controls: strona GitHub o kontroli handlu [usunięto na polecenie Ewy 2026-11-03: dane o lokalizacji]. Sankcje dotyczą m.in. Krymu, separatystycznych obszarów Doniecka i Ługańska, Kuby, Iranu i Korei Północnej. [BRAK DOWODU]
 
 **Nauka (podstawy protokołów):**
 
@@ -1632,9 +1632,9 @@ echo "Done. Commit the pinned workflows, then complete the manual UI checklist."
 
 **Partnerzy w USA:** laboratoria ekonomii behawioralnej i NLP na uniwersytetach (replikatorzy), organizacje ewaluacyjne i AI safety (np. METR, Apollo, zespoły związane z Inspect), niezależni badacze z LessWrong/Alignment Forum. Podejście: zaproszenie do zgłoszenia agenta albo replikacji z gotowym harnessem, z jasnym budżetem i współautorstwem raportu.
 
-**Finansowanie:** Coefficient Giving prowadzi RFP z zakresu technical AI safety. To Open Philanthropy pod nową nazwą: zmianę ogłoszono 18.11.2025, a organizacja ma teraz 13 funduszy otwartych dla wielu darczyńców. Status okien naboru znam tylko z serwisów agregujących, więc trzeba go sprawdzić u źródła. LTFF w ogłoszeniu z 2025 r. pisał: „Individuals and organizations worldwide are welcome to apply”.  Manifund oferuje fiscal sponsorship „for non-501c3 entities, including individuals, for-profits, and international organizations”.  Wzmianek o Kosowie nie znalazłam. Programy kredytów API u dostawców modeli: sprawdzić bieżące warunki. [BRAK DOWODU]
+**Finansowanie:** Coefficient Giving prowadzi RFP z zakresu technical AI safety. To Open Philanthropy pod nową nazwą: zmianę ogłoszono 18.11.2025, a organizacja ma teraz 13 funduszy otwartych dla wielu darczyńców. Status okien naboru znam tylko z serwisów agregujących, więc trzeba go sprawdzić u źródła. LTFF w ogłoszeniu z 2025 r. pisał: „Individuals and organizations worldwide are welcome to apply”.  Manifund oferuje fiscal sponsorship „for non-501c3 entities, including individuals, for-profits, and international organizations”.   Programy kredytów API u dostawców modeli: sprawdzić bieżące warunki. [BRAK DOWODU]
 
-**Płatności:** Stripe, PayPal i Wise nie obsługują firm z Kosowa (źródła wtórne, zgodne ze sobą).  GitHub Sponsors nie ma Kosowa na liście regionów wypłat, ale dopuszcza fiscal hosta.   Opcje: fiscal host (Open Collective/Manifund), przy produktach merchant of record, a docelowo spółka LLC lub C-corp w Delaware przez Atlas/Firstbase/doola z EIN. Dostępność tych usług dla rezydentów Kosowa trzeba potwierdzić przed rejestracją. Kwestie podatkowe wymagają konsultacji z doradcą. [BRAK DOWODU]
+**Płatności:** Dostępność Stripe, PayPal i Wise zależy od kraju.  GitHub Sponsors dopuszcza fiscal hosta.   Opcje: fiscal host (Open Collective/Manifund), przy produktach merchant of record, a docelowo spółka LLC lub C-corp w Delaware przez Atlas/Firstbase/doola z EIN. Dostępność tych usług w kraju pobytu trzeba potwierdzić przed rejestracją. Kwestie podatkowe wymagają konsultacji z doradcą. [BRAK DOWODU]
 
 **Drabina monetyzacji:** (1) bezpłatne: protokoły i harness; (2) raport PERSONA-01 dla jednego procesu klienta (jakość, koszt, podatność na presję); (3) raport odporności agenta TRUST/DEBATE; (4) usługa replikacji; (5) prywatny benchmark z held-out; (6) warsztat „od niejasnego pytania do prerejestrowanego eksperymentu”. Cena = zmierzony koszt przebiegu × narzut, ustalana dopiero po pilocie. Nigdy nie sprzedajemy „potwierdzenia świadomości” ani pieczęci jakości opartych na samoopisach.
 
@@ -1659,14 +1659,14 @@ echo "Done. Commit the pinned workflows, then complete the manual UI checklist."
 
 ## 6. Prawo i regulacje: krótka lista kontrolna (to nie jest porada prawna)
 
-- **GitHub (wszędzie):** Regulamin obowiązuje niezależnie od kraju: jedno darmowe konto maszynowe na osobę, zakaz kont zakładanych automatycznie, zakaz spamu i nieautentycznej aktywności.  Kosowa nie ma na liście sankcji GitHub. [BRAK DOWODU]
-- **Kosowo:** ustawa nr 06/L-082 o ochronie danych osobowych (Dziennik Urzędowy nr 6 z 25.02.2019) jest zgodna z RODO, a nadzoruje ją Agencja Informacji i Prywatności (AIP). Obowiązuje przy przetwarzaniu danych osobowych, np. logów uczestników AI-HUMAN. Według prisztińskiej kancelarii Vokshi & Lata przy „serious and widespread violation” AIP może nałożyć karę od 20 000 do 40 000 EUR. Wniosek: nie publikować danych osób, a przy badaniach z ludźmi zbierać zgody. [BRAK DOWODU]
+- **GitHub (wszędzie):** Regulamin obowiązuje niezależnie od kraju: jedno darmowe konto maszynowe na osobę, zakaz kont zakładanych automatycznie, zakaz spamu i nieautentycznej aktywności.   [BRAK DOWODU]
+- [usunięto na polecenie Ewy 2026-11-03: dane o lokalizacji]
 - **USA:** sekcja 5 ustawy o FTC zakazuje wprowadzających w błąd twierdzeń o AI, więc marketing musi zgadzać się z wynikami. EO 14365 z 11.12.2025 powołało w DOJ AI Litigation Task Force do kwestionowania stanowych ustaw o AI.  Dopóki sąd ich nie uchyli, ustawy stanowe obowiązują.  Colorado zastąpiło swoją ustawę o AI ustawą SB 26-189 (podpisana 14.05.2026, skuteczna od 1.01.2027).   Texas HB 149 (TRAIGA), California SB 53 i AB 2013 obowiązują od 1.01.2026;  dotyczą głównie deweloperów modeli i systemów decyzyjnych, a AI-EWA w obecnej formie raczej nie podlega ich głównym obowiązkom. COPPA: nie dopuszczać dzieci poniżej 13 lat, co i tak wynika z Regulaminu GitHub.  CCPA/CPRA: istotne przy danych Kalifornijczyków i progach biznesowych. Badania z udziałem ludzi: amerykańskie konferencje oczekują zgody IRB albo zwolnienia z niej. Eksperymenty wyłącznie na modelach zwykle nie są badaniami na ludziach (założenie do potwierdzenia z partnerem uczelnianym). [BRAK DOWODU]
 - **UE (eksterytorialnie):** RODO może mieć zastosowanie, gdy oferuje Pani usługi osobom w UE lub monitoruje ich zachowanie. AI Act dotyczy podmiotów wprowadzających systemy AI na rynek UE. Przy samej publicznej dyskusji badawczej ryzyko jest niskie, ale rośnie przy produkcie komercyjnym. [BRAK DOWODU]
 
 ## 7. Zastrzeżenia
 
 - Ustawień prywatnych (secret scanning, rulesety, kategorie Discussions) nie da się zweryfikować z zewnątrz. Nie czytałam też treści otwartego PR, NOTICE ani katalogów.
-- SHA akcji, terminy konferencji, okna grantowe i dostępność usług założycielskich dla Kosowa wymagają sprawdzenia w dniu wdrożenia.
-- Część faktów prawnych i rynkowych (Colorado, FTC z 1.07.2026, płatności w Kosowie) pochodzi ze źródeł wtórnych.
+- SHA akcji, terminy konferencji, okna grantowe i dostępność usług założycielskich w kraju pobytu wymagają sprawdzenia w dniu wdrożenia.
+- Część faktów prawnych i rynkowych (Colorado, FTC z 1.07.2026, płatności w kraju pobytu) pochodzi ze źródeł wtórnych.
 - Kod harnessu napisano pod Python ≥3.10 i przetestowano tylko logicznie, nie uruchamiałam go. Pierwszym krokiem jest `pytest` w CI.
