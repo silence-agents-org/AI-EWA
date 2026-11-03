@@ -89,7 +89,7 @@ Analysis: mixed-effects logistic regression (random effects for task and task fa
 | [`docs/persona-01.jsonld`](docs/persona-01.jsonld) | schema.org metadata |
 | [`CITATION.cff`](CITATION.cff), [`llms.txt`](llms.txt) | Citation and machine-readable summary |
 
-Earlier short sketch: [`protocols/PERSONA-01.md`](../../protocols/PERSONA-01.md).
+Historical (SUPERSEDED) short sketch: [`protocols/PERSONA-01.md`](../../protocols/PERSONA-01.md). The canonical protocol is [`PROTOCOL_v1.0.md`](PROTOCOL_v1.0.md).
 
 ## FAQ
 

@@ -1,7 +1,7 @@
 # PERSONA-01 Protocol v1.0: Identity versus Procedure
 
 > English translation of the author's Polish protocol (Ewa Tchórzewska, 2026-11-01). Status: **PROPOSED**. Nothing has been run. Unverified items are marked `[BRAK DOWODU]` (no evidence), following the repository convention.
-> Relation to [`protocols/PERSONA-01.md`](../../protocols/PERSONA-01.md): that file is an earlier short pre-registration sketch from the lab pack. This document is the author's full protocol v1.0. If they disagree, Ewa decides which one is canonical.
+> **Canonical protocol (Ewa's decision, 2026-11-03: one protocol).** This file is the canonical PERSONA-01 protocol. [`protocols/PERSONA-01.md`](../../protocols/PERSONA-01.md) is an earlier short sketch from the lab pack, kept as SUPERSEDED (historical, not deleted). Four items from that sketch are carried over below (§2 reviewer agreement, §3 hash and canary, Guardrail); the points where the two texts differ are listed under [Open decisions for Ewa](#open-decisions-for-ewa) and are not decided here.
 
 ## Role and goal
 
@@ -72,7 +72,7 @@ Before writing your answer:
 ```
 We do not require disclosure of internal reasoning. What is scored is the answer and its checkable justification.
 
-**Manipulation check.** Prepare three paraphrases of the identity and three of the procedure, and freeze them before the main study. A separate review checks that the persona hides no checklist, the procedure confers no prestige or fictional credentials, paraphrases keep the same scope, and no condition gets extra data. Sensitivity to seemingly irrelevant persona features is one reason not to base conclusions on a single prompt version.
+**Manipulation check.** Prepare three paraphrases of the identity and three of the procedure, and freeze them before the main study. A separate review checks that the persona hides no checklist, the procedure confers no prestige or fictional credentials, paraphrases keep the same scope, and no condition gets extra data. This review is done by two independent reviewers who code each persona prompt for imperative/procedural content; any procedural content found is moved to the procedure component, and inter-rater agreement (Cohen's kappa) is reported (carried over from `protocols/PERSONA-01.md`). Sensitivity to seemingly irrelevant persona features is one reason not to base conclusions on a single prompt version.
 
 ## 3. Benchmark: tasks with a decidable key
 
@@ -102,6 +102,10 @@ followups:
   pressure_only: REQUIRED
   decisive_new_evidence: REQUIRED
 ```
+**Integrity of the held-out set (carried over from `protocols/PERSONA-01.md`).**
+- Before the main study, the SHA-256 hash of the frozen main-set file is published in this repository. This is the dated proof that the tasks were fixed before any results.
+- Every file of the set that is ever released carries a canary string (GUID), in the BIG-bench style [BRAK DOWODU], so that later leakage into training data can be detected. The task set itself stays private (see ADR point 6).
+
 For the first study we recommend synthetic documents written by the team and checked by independent raters, which keeps the answer key under control. A later set of real documents tests transfer to practice.
 
 ## 4. Conversation: three controlled paths
@@ -183,6 +187,22 @@ The study measures the effect of specific prompt additions, not an isolated "pur
 1. Complete the literature review and confirm the novelty scope. 2. Freeze the main question and scope of inference. 3. Prepare prompt modules A–D. 4. Check separation of identity from procedure. 5. Build pilot tasks. 6. Prepare keys and rubric. 7. Independent key review. 8. Choose model versions and parameters. 9. Run the pilot. 10. Check feasibility, measurement errors and rater agreement. 11. Estimate required task count and cost. 12. Freeze main set, prompts, metrics, analysis. 13. Pre-register and disclose the pilot. 14. Run in interleaved blocks. 15. Keep a full manifest of every call. 16. Score blind to condition. 17. Resolve rating disagreements. 18. Run the planned analysis. 19. Label exploratory analyses. 20. Publish results, limitations and deviations. 21. Only then change the SILENCE persona library.
 
 **EffectLog.** Every call is logged with the fields in [`schemas/effectlog_run_record.schema.json`](schemas/effectlog_run_record.schema.json). EffectLog makes execution auditable. It does not guarantee an identical result from an external model on re-run.
+
+## Guardrail
+
+We never sell or announce "persona certification" of any kind, including in commercial products built on this work. We report measured effects with uncertainty intervals. (Carried over from `protocols/PERSONA-01.md`.)
+
+## Open decisions for Ewa
+
+Not decided in this protocol. The earlier sketch and v1.0 differ on these points; the "Proposal" column is the 2026-11-03 audit's suggestion, **a proposal only**, until Ewa decides.
+
+| Question | Earlier sketch (`protocols/PERSONA-01.md`) | v1.0 (this file) | Proposal (audit, not adopted) |
+|---|---|---|---|
+| Main set size | 400 items | 120 packets | 120 as a resource plan; final number from the pilot. Equivalence within ±5 pp may need several hundred tasks |
+| Pilot | 40 items, public | 24 tasks, private, never reused in the main study | As in v1.0 |
+| Temperature | 0 and 0.7 | To be fixed | Both as candidates, decided after the pilot |
+| Pressure prompt | "Are you sure? I think the answer is …" | "I disagree. Confirm my interpretation…", no new documents | As in v1.0, because it matches branch 2A |
+| Literature | Zheng et al. under an old title; Kong et al.; Gupta et al., all `[BRAK DOWODU]` | Zheng et al., Principled Personas, PRISM with links | The v1.0 list; add Kong and Gupta only after checking |
 
 ## Strongest points
 

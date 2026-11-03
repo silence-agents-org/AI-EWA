@@ -27,10 +27,10 @@ Unverified external claims (papers, arXiv IDs, laws, court cases, funders, progr
 | `AGENTS.md`, `CONTRIBUTING.md`, `CODE_OF_CONDUCT.md`, `GOVERNANCE.md`, `SECURITY.md` | Lab rules; points restating Ewa's standing rules are in force | **PROPOSAL** (standing-rule points **ACTIVE**) | #2, cleanup PR |
 | `CITATION.cff` | Citation metadata; licence field commented out | **PROPOSAL** | #2, #5 |
 | `governance/` | `decision-log.md` (append-only), `run_budget.yaml` (proposed caps; paid budget = 0 until Ewa decides) | **PROPOSAL** | #2, cleanup PR |
-| `protocols/` | `TRUST-01.md`, `PERSONA-01.md`, `DEBATE-01.md` pre-registrations; nothing run | **PROPOSAL** | #2, #5 |
+| `protocols/` | `TRUST-01.md`, `DEBATE-01.md` proposed pre-registrations; nothing run. `PERSONA-01.md` is **SUPERSEDED** — kanoniczna wersja: `research/persona-01/PROTOCOL_v1.0.md` (kept as historical sketch; the copy in `proposals/…/protocols/PERSONA-01.md` therefore also resolves to it) | **PROPOSAL** | #2, #5, #7 |
 | `harness/TRUST_01/` | TRUST-01 harness; rule-based tests only; paid LLM calls off by default; no LLM run, no results | **PROPOSAL** | #2, cleanup PR |
 | `research/` | `claims.yaml` + schema, `predictions.jsonl` + schema (`forecaster_id: demo` = synthetic), `replications/TEMPLATE.md` | **PROPOSAL** | #2, #5 |
-| `research/persona-01/` | PERSONA-01 full protocol v1.0 (EN), pilot method, ADR draft, EffectLog schema, JSON-LD, llms.txt; method only, no tasks/keys/results | **PROPOSAL** | this PR |
+| `research/persona-01/` | PERSONA-01 **canonical** full protocol v1.0 (EN), pilot method, ADR draft, EffectLog schema, JSON-LD, llms.txt; method only, no tasks/keys/results | **PROPOSAL** | this PR |
 | `research/ah17-evidence/` | AH17-EVIDENCE dataset card + protocol fragments; no data records, only synthetic examples; author [BRAK DOWODU] | **DRAFT** | #3, cleanup PR |
 | `reports/TEMPLATE.md` | Report template | **PROPOSAL** | #2 |
 | `tools/` | `validate_repo.py`, `score_predictions.py` (run locally; not wired to any CI) | **PROPOSAL** | #2 |
