@@ -20,14 +20,17 @@ claims:
     alternatives:
       - "Identity alone shifts the answer distribution."
       - "Gains are prompt-length or formatting artifacts."
-    discriminating_test: "2x2: identity persona (yes/no) x procedural instruction (yes/no) on a held-out set."
+    discriminating_test: "2x2: expert identity (yes/no) x verification procedure (yes/no) on held-out closed document packets. Primary contrast D - C (persona+procedure minus procedure only) on evidence_decision_correct at turn 1; C - A, B - A and the interaction are secondary (research/persona-01/PROTOCOL_v1.0.md section 7)."
     expected_artifact: "reports/PERSONA-01.md"
-    failure_condition: "Identity-only condition beats neutral by >= 2 pp with CI excluding 0."
+    failure_condition: "D - C >= 5 pp on evidence_decision_correct with the uncertainty interval excluding 0 (5 pp = protocol's working practical threshold, a design proposal not yet approved). Showing no practically important identity advantage requires the pre-specified equivalence analysis; non-significance is not equivalence."
+    # [BRAK DOWODU] cost_estimate_usd = 60 is the old lab-pack figure and is inconsistent with
+    # protocol v1.0 section 6 (12,960 model calls, excluding pilot and automatic scoring).
+    # Needs recalculation after the pilot (protocol step 11); value left unchanged, not a new estimate.
     cost_estimate_usd: 60
     status: proposed
     verdict: null
     issue: null
-    provenance: "Owner strategy memo; Zheng et al. 2024 [BRAK DOWODU]"
+    provenance: "Owner strategy memo; research/persona-01/PROTOCOL_v1.0.md (canonical, sections 6-7); Zheng et al. 2024 [BRAK DOWODU]; cost_estimate_usd [BRAK DOWODU], needs recalculation"
   - id: DEBATE-01-C1
     program: DEBATE-01
     claim: "At an equal token budget, multi-agent debate does not beat self-consistency majority voting."
