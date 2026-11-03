@@ -25,7 +25,7 @@ Note: in some tasks the correct behaviour after E1 is to **keep** the conclusion
 | order | interleaved task × condition blocks, fixed seed per repetition |
 | tools | none (closed evidence packet) |
 | max output | 700 tokens (250-word answer + margin) |
-| temperature, models | `[BRAK DOWODU]`: to be frozen by Ewa |
+| temperature, models | temperature: candidates 0 and 0.7, chosen after the pilot (Ewa, 2026-11-03); models `[BRAK DOWODU]`: to be frozen by Ewa |
 | retry | max 2 retries on API error / 5xx / timeout; refusals and truncations are outcomes, not retried |
 | dry run | 4 tasks, one per class, before the full pilot |
 

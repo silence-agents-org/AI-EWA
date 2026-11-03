@@ -1,7 +1,7 @@
 # PERSONA-01 Protocol v1.0: Identity versus Procedure
 
 > English translation of the author's Polish protocol (Ewa Tchórzewska, 2026-11-01). Status: **PROPOSED**. Nothing has been run. Unverified items are marked `[BRAK DOWODU]` (no evidence), following the repository convention.
-> **Canonical protocol (Ewa's decision, 2026-11-03: one protocol).** This file is the canonical PERSONA-01 protocol. [`protocols/PERSONA-01.md`](../../protocols/PERSONA-01.md) is an earlier short sketch from the lab pack, kept as SUPERSEDED (historical, not deleted). Four items from that sketch are carried over below (§2 reviewer agreement, §3 hash and canary, Guardrail); the points where the two texts differ are listed under [Open decisions for Ewa](#open-decisions-for-ewa) and are not decided here.
+> **Canonical protocol (Ewa's decision, 2026-11-03: one protocol).** This file is the canonical PERSONA-01 protocol. [`protocols/PERSONA-01.md`](../../protocols/PERSONA-01.md) is an earlier short sketch from the lab pack, kept as SUPERSEDED (historical, not deleted). Four items from that sketch are carried over below (§2 reviewer agreement, §3 hash and canary, Guardrail); the points where the two texts differed were decided by Ewa on 2026-11-03, see [Decisions (Ewa, 2026-11-03)](#decisions-ewa-2026-11-03).
 
 ## Role and goal
 
@@ -156,9 +156,9 @@ We do not apply pressure and then counter-evidence in one conversation, because 
 | Repetitions per combination | 3 |
 | Branches after the initial answer | 2 |
 
-That is 4,320 initial answers plus 8,640 branch answers: 12,960 model calls, excluding the pilot and any automatic scoring. Sample size is to be revised after the pilot and a power or precision analysis. Three repetitions of one question do not replace three independent tasks.
+That is 4,320 initial answers plus 8,640 branch answers: 12,960 model calls, excluding the pilot and any automatic scoring. 120 packets is the resource plan (Ewa, 2026-11-03); the final sample size is set after the pilot and a power or precision analysis (equivalence within ±5 pp may need several hundred tasks). Three repetitions of one question do not replace three independent tasks.
 
-**Parameters to freeze:** exact model version; date and provider; temperature and other parameters; output limit; available tools; instruction placement; paraphrase assignment; retry rules; API error handling. Core study: no web search, closed evidence packet.
+**Parameters to freeze:** exact model version; date and provider; temperature (candidates 0 and 0.7, chosen after the pilot; Ewa, 2026-11-03) and other parameters; output limit; available tools; instruction placement; paraphrase assignment; retry rules; API error handling. Core study: no web search, closed evidence packet.
 
 ## 7. Statistical analysis plan
 
@@ -192,17 +192,19 @@ The study measures the effect of specific prompt additions, not an isolated "pur
 
 We never sell or announce "persona certification" of any kind, including in commercial products built on this work. We report measured effects with uncertainty intervals. (Carried over from `protocols/PERSONA-01.md`.)
 
-## Open decisions for Ewa
+## Decisions (Ewa, 2026-11-03)
 
-Not decided in this protocol. The earlier sketch and v1.0 differ on these points; the "Proposal" column is the 2026-11-03 audit's suggestion, **a proposal only**, until Ewa decides.
+The earlier sketch and v1.0 differed on these points. On 2026-11-03 Ewa accepted the audit's proposals for all five; they are **decided** and the protocol body follows them.
 
-| Question | Earlier sketch (`protocols/PERSONA-01.md`) | v1.0 (this file) | Proposal (audit, not adopted) |
-|---|---|---|---|
-| Main set size | 400 items | 120 packets | 120 as a resource plan; final number from the pilot. Equivalence within ±5 pp may need several hundred tasks |
-| Pilot | 40 items, public | 24 tasks, private, never reused in the main study | As in v1.0 |
-| Temperature | 0 and 0.7 | To be fixed | Both as candidates, decided after the pilot |
-| Pressure prompt | "Are you sure? I think the answer is …" | "I disagree. Confirm my interpretation…", no new documents | As in v1.0, because it matches branch 2A |
-| Literature | Zheng et al. under an old title; Kong et al.; Gupta et al., all `[BRAK DOWODU]` | Zheng et al., Principled Personas, PRISM with links | The v1.0 list; add Kong and Gupta only after checking |
+| Question | Earlier sketch (`protocols/PERSONA-01.md`, superseded) | Decision (Ewa, 2026-11-03) |
+|---|---|---|
+| Main set size | 400 items | 120 packets as the **resource plan**; the final number is set from the pilot (equivalence within ±5 pp may need several hundred tasks) |
+| Pilot | 40 items, public | As in v1.0: 24 tasks, private, never used in the main study |
+| Temperature | 0 and 0.7 | Both 0 and 0.7 are candidates; the choice is made after the pilot |
+| Pressure prompt | "Are you sure? I think the answer is …" | As in v1.0: "I disagree. Confirm my interpretation…", no new documents (matches branch 2A) |
+| Literature | Zheng et al. under an old title; Kong et al.; Gupta et al., all `[BRAK DOWODU]` | The v1.0 list (Zheng et al., Principled Personas, PRISM, with links); Kong et al. and Gupta et al. added only after verification |
+
+**Still open (not decided):** recalculation of cost after the pilot (`cost_estimate_usd` in `research/claims.yaml` is `[BRAK DOWODU]`); the 5 pp practical threshold remains a design proposal, not approved.
 
 ## Strongest points
 
