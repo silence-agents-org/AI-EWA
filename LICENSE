@@ -1,3 +1,5 @@
+All rights reserved, © Ewa Tchórzewska
+
 Copyright (c) 2026 Ewa Tchórzewska (osoba fizyczna). Wszelkie prawa zastrzeżone.
 
 1. Podmiot praw
@@ -9,14 +11,43 @@ promptów, benchmarków, wyników badań, dokumentacji i zasobów towarzyszącyc
 Materiał jest objęty wyłączną ochroną prawa autorskiego. Nie jest udzielana
 żadna licencja — wyraźna, domniemana ani dorozumiana — w szczególności
 licencja open source. Bez uprzedniej pisemnej zgody Ownera zabronione jest:
-używanie, kopiowanie, modyfikowanie, tworzenie dzieł zależnych, dystrybucja,
-sublicencjonowanie, publiczne udostępnianie oraz wykorzystanie komercyjne.
+a) używanie, kopiowanie, modyfikowanie, tworzenie dzieł zależnych;
+b) dystrybucja, sublicencjonowanie, publiczne udostępnianie;
+c) wykorzystanie komercyjne;
+d) udostępnianie w formie pliku do pobrania lub uruchomienia, chyba że
+   wynika to z odrębnej pisemnej umowy z Ownerem;
+e) podejmowanie prób obejścia niniejszych ograniczeń, w tym przez
+   dekompilację, inżynierię wsteczną lub ekstrakcję elementów Materiału
+   w celu ponownego wykorzystania poza zakresem dozwolonym przez prawo.
 
 3. Granice ochrony
 Ochrona prawno-autorska nie stanowi grantu patentowego, nie zastępuje
 zgłoszenia patentowego, rejestracji znaku towarowego ani umowy NDA.
-Komponenty oznaczone jako TRADE_SECRET lub RESEARCH_RAW podlegają dodatkowym
-ograniczeniom zgodnie z plikiem LICENSE-CLOSED-MODULES (jeżeli występuje).
 
-4. Kontakt w sprawie zgody
-ewa.tchorzewska@globalx.pl
+---
+
+Copyright (c) 2026 Ewa Tchórzewska (natural person). All rights reserved.
+
+1. Rights holder
+The sole holder of the author's economic rights to the source code, protocols,
+prompts, benchmarks, research results, documentation and accompanying assets
+(the "Material") is Ewa Tchórzewska as a natural person (the "Owner").
+
+2. Scope of reservation
+The Material is protected exclusively by copyright. No licence is granted —
+express, implied or tacit — in particular no open-source licence. Without the
+Owner's prior written consent the following are prohibited:
+a) using, copying, modifying, creating derivative works;
+b) distributing, sublicensing, making publicly available;
+c) commercial use;
+d) making the Material available as a file to download or run, unless this
+   follows from a separate written agreement with the Owner;
+e) attempting to circumvent these restrictions, including by decompilation,
+   reverse engineering or extraction of elements of the Material for reuse
+   beyond the scope permitted by law.
+
+3. Limits of protection
+Copyright protection is not a patent grant and does not replace a patent
+application, trademark registration or a non-disclosure agreement.
+
+In case of discrepancy, the Polish version prevails.
