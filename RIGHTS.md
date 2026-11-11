@@ -15,8 +15,8 @@ Materials authored by Ewa Tchórzewska before or outside AI-EWA — including al
 ## 2. External contributions
 Contributors keep copyright and all other rights in their own contributions (section 0). Posting in Discussions, Issues or PRs is **not** an assignment of rights and is not consent to use beyond the discussion. `CLA.md` is a **template, not in force**: if Ewa adopts it after a lawyer's review, signing it would be voluntary and would grant a **non-exclusive licence — never an assignment**; the contributor would keep ownership.
 
-## 3. Licences per asset type — PROPOSAL, pending Ewa's decision
-**No licence has been adopted and no `LICENSE`, `LICENSE-DOCS` or `LICENSE-DATA` file exists.** Until Ewa decides, default copyright applies: each author retains the rights to their own work. The pack proposes:
+## 3. Licences per asset type
+**Status 2026-11-11:** Ewa adopted a closed licence for her materials (`LICENSE` in the repository root): all rights reserved; no open-source licence is granted. Section 0 remains in force and is not overridden by `LICENSE`. The open-licence table below is a superseded proposal.
 
 | Path | Proposed licence (not adopted) |
 |---|---|

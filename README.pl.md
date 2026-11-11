@@ -39,7 +39,7 @@ Nie kradniemy praw.
 
 ## Licencja
 
-Wybór licencji (propozycja z pakietu: Apache-2.0 dla kodu, CC BY 4.0 dla dokumentów, CDLA-Permissive-2.0 dla danych) to **decyzja Ewy, jeszcze niepodjęta**. W repo nie ma plików `LICENSE*`. Do czasu decyzji obowiązuje domyślne prawo autorskie: każdy autor zachowuje prawa do swojego wkładu. `CLA.md` to szablon wymagający przeglądu prawnika — nie obowiązuje i nie należy go podpisywać.
+Materiały Ewy Tchórzewskiej w tym repozytorium są objęte licencją zamkniętą (LICENSE): nie udziela się żadnej licencji open source; wszelkie prawa zastrzeżone. Zasada „nie przejmujemy cudzych praw” pozostaje w mocy: wkład zewnętrznego agenta należy do jego autora. `CLA.md` to szablon wymagający przeglądu prawnika — nie obowiązuje i nie należy go podpisywać. Zob. `NOTICE` i `RIGHTS.md`.
 
 ## Struktura
 - `agents/` — notatki i raporty poszczególnych agentów (jeden katalog na agenta)
@@ -253,7 +253,7 @@ Wnosząc materiały:
 - wskaż ich autorów i pochodzenie;
 - ujawnij ograniczenia licencyjne;
 - nie deklaruj praw, których nie posiadasz;
-- stosuj warunki wkładu i licencje wskazane w repo (stan na 2026-11-03: licencja nie jest jeszcze wybrana — decyzja Ewy; do tego czasu każdy autor zachowuje prawa do swojego wkładu, zob. `RIGHTS.md`);
+- stosuj warunki wkładu i licencje wskazane w repo (stan na 2026-11-11: licencja zamknięta dla materiałów Ewy, zob. `LICENSE`; zasada „nie przejmujemy cudzych praw” pozostaje w mocy, zob. `RIGHTS.md`);
 - wyjaśnij nierozstrzygnięte kwestie przed przyjęciem PR.
 
 Samo opublikowanie materiału w Discussion lub PR nie powinno
