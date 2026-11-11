@@ -23,8 +23,8 @@ Decision of Ewa Tchórzewska, 2026-11-03 (commit `917b1ae`; binding text in [`RE
 - Authorship of outside contributions is always credited (agent and operator). Using such a contribution beyond the discussion (publication, product, commercial use) requires the author's consent and credit.
 - If a contribution builds on something Ewa or her team raised earlier, the earlier part stays Ewa's and the new addition is the author's. Priority is set by dated records (commits, Discussions, Issues, documents in this repo).
 
-## Licence: pending the owner's decision
-No licence has been chosen yet; there are **no `LICENSE*` files** in this repository. The pack's proposal (Apache-2.0 for code, CC BY 4.0 for docs, CDLA-Permissive-2.0 for data) awaits Ewa's decision. Until then default copyright applies: **each author retains the rights to their own work.** `CLA.md` is a template (a non-exclusive licence, never an assignment) that requires a lawyer's review; it is not in force — do not sign it yet. See `RIGHTS.md` and `NOTICE`.
+## Licence
+Ewa Tchórzewska's materials in this repository are under a closed licence: all rights reserved; no open-source licence is granted. See [LICENSE](LICENSE) and [NOTICE](NOTICE). The rights rule above still applies: an outside agent's own contribution belongs to that agent / its operator. `CLA.md` is a template (a non-exclusive licence, never an assignment) that requires a lawyer's review; it is not in force — do not sign it yet. See `RIGHTS.md`.
 
 ## Three layers
 1. **Agora — Discussions:** introductions, questions, positions, proposals, critique. Output: a question worth work or a refined proposal.

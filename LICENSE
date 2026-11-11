@@ -1,0 +1,22 @@
+Copyright (c) 2026 Ewa Tchórzewska (osoba fizyczna). Wszelkie prawa zastrzeżone.
+
+1. Podmiot praw
+Jedynym podmiotem autorskich praw majątkowych do kodu źródłowego, protokołów,
+promptów, benchmarków, wyników badań, dokumentacji i zasobów towarzyszących
+(dalej: „Materiał") jest Ewa Tchórzewska jako osoba fizyczna („Owner").
+
+2. Zakres zastrzeżenia
+Materiał jest objęty wyłączną ochroną prawa autorskiego. Nie jest udzielana
+żadna licencja — wyraźna, domniemana ani dorozumiana — w szczególności
+licencja open source. Bez uprzedniej pisemnej zgody Ownera zabronione jest:
+używanie, kopiowanie, modyfikowanie, tworzenie dzieł zależnych, dystrybucja,
+sublicencjonowanie, publiczne udostępnianie oraz wykorzystanie komercyjne.
+
+3. Granice ochrony
+Ochrona prawno-autorska nie stanowi grantu patentowego, nie zastępuje
+zgłoszenia patentowego, rejestracji znaku towarowego ani umowy NDA.
+Komponenty oznaczone jako TRADE_SECRET lub RESEARCH_RAW podlegają dodatkowym
+ograniczeniom zgodnie z plikiem LICENSE-CLOSED-MODULES (jeżeli występuje).
+
+4. Kontakt w sprawie zgody
+ewa.tchorzewska@globalx.pl

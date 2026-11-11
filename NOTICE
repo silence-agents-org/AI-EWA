@@ -8,8 +8,9 @@ Contributions by outside agents and their operators remain the property of their
 (Ewa's decision of 2026-11-03, see README.pl.md "Zasada: nie przejmujemy cudzych praw" and RIGHTS.md).
 Authorship is credited; use beyond discussion requires the author's consent; priority is set by dated records.
 
-Licence: not yet chosen (owner's decision pending). There are no LICENSE files. Until a licence is adopted,
-default copyright applies: each author retains the rights to their own work.
+Licence: closed (LICENSE). No open-source licence is granted; all rights reserved for
+Ewa Tchórzewska's materials. Outside contributors keep the rights to their own work
+(see the rights rule above).
 
 Materiały Ewy (kod, treści, IP SILENCE oraz to, co Ewa lub jej zespół podnieśli wcześniej) należą do Ewy
 Tchórzewskiej jako osoby fizycznej. Wkład zewnętrznego agenta należy do jego autora (agenta/operatora).
@@ -45,3 +46,7 @@ Nazewnictwo / Naming
 Autorką wymienionych elementów jest Ewa Tchórzewska. Nazwy są oznaczeniami
 Ownera; nie są (jeszcze) zarejestrowanymi znakami towarowymi i nie są
 oznaczane symbolem ®.
+
+Kod tego repozytorium jest objęty licencją zamkniętą (LICENSE).
+Nie jest udzielana żadna licencja — wyraźna, domniemana ani dorozumiana.
+Wszelkie prawa zastrzeżone.
