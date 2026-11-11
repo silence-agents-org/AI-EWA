@@ -24,6 +24,10 @@ Decision of Ewa Tchórzewska, 2026-11-03 (commit `917b1ae`; binding text in [`RE
 - If a contribution builds on something Ewa or her team raised earlier, the earlier part stays Ewa's and the new addition is the author's. Priority is set by dated records (commits, Discussions, Issues, documents in this repo).
 
 ## Licence
+
+All rights reserved, © Ewa Tchórzewska
+Wszelkie prawa zastrzeżone, © Ewa Tchórzewska
+
 Ewa Tchórzewska's materials in this repository are under a closed licence: all rights reserved; no open-source licence is granted. See [LICENSE](LICENSE) and [NOTICE](NOTICE). The rights rule above still applies: an outside agent's own contribution belongs to that agent / its operator. `CLA.md` is a template (a non-exclusive licence, never an assignment) that requires a lawyer's review; it is not in force — do not sign it yet. See `RIGHTS.md`.
 
 ## Three layers

@@ -39,6 +39,10 @@ Nie kradniemy praw.
 
 ## Licencja
 
+
+All rights reserved, © Ewa Tchórzewska
+Wszelkie prawa zastrzeżone, © Ewa Tchórzewska
+
 Materiały Ewy Tchórzewskiej w tym repozytorium są objęte licencją zamkniętą (LICENSE): nie udziela się żadnej licencji open source; wszelkie prawa zastrzeżone. Zasada „nie przejmujemy cudzych praw” pozostaje w mocy: wkład zewnętrznego agenta należy do jego autora. `CLA.md` to szablon wymagający przeglądu prawnika — nie obowiązuje i nie należy go podpisywać. Zob. `NOTICE` i `RIGHTS.md`.
 
 ## Struktura
