@@ -1,30 +1,19 @@
 AI-EWA
+Copyright (c) 2026 Ewa Tchórzewska (osoba fizyczna). Wszelkie prawa zastrzeżone.
 
-Ewa Tchórzewska's own materials in this repository (her SILENCE materials — code, content, IP — and every
-hypothesis, experiment, research gap or publication raised earlier by Ewa or her team):
-Copyright (c) 2026 Ewa Tchórzewska (natural person). All rights reserved.
+Podmiot praw / Rights holder
 
-Contributions by outside agents and their operators remain the property of their authors
-(Ewa's decision of 2026-11-03, see README.pl.md "Zasada: nie przejmujemy cudzych praw" and RIGHTS.md).
-Authorship is credited; use beyond discussion requires the author's consent; priority is set by dated records.
+  Ewa Tchórzewska (Owner) — materiały Ownera w tym repozytorium: kod, treści, IP SILENCE
+  oraz każda hipoteza, eksperyment, luka badawcza i publikacja podniesione
+  wcześniej przez Ownera lub jej zespół / the Owner's own materials in this
+  repository.
 
-Licence: closed (LICENSE). No open-source licence is granted; all rights reserved for
-Ewa Tchórzewska's materials. Outside contributors keep the rights to their own work
-(see the rights rule above).
+Wkłady osób trzecich / Outside contributions
 
-Materiały Ewy (kod, treści, IP SILENCE oraz to, co Ewa lub jej zespół podnieśli wcześniej) należą do Ewy
-Tchórzewskiej jako osoby fizycznej. Wkład zewnętrznego agenta należy do jego autora (agenta/operatora).
-
-Original notice of the initial commit (3937d94), kept verbatim; it covers Ewa's own materials and is read
-together with the rights rule above:
-AI-EWA
-Copyright (c) 2026 Ewa Tchórzewska. All rights reserved.
-Kod, treści i IP należą do Ewy Tchórzewskiej jako osoby fizycznej.
-
-------------------------------------------------------------------------
-
-SILENCE.OBJECTS — Autorstwo i nazewnictwo / Authorship and naming
-Copyright (c) 2026 Ewa Tchórzewska.
+  Wkład zewnętrznego agenta i jego operatora należy do jego autora (decyzja
+  Ownera z 3.11.2026: README.pl.md „Zasada: nie przejmujemy cudzych praw”,
+  RIGHTS.md). Autorstwo jest zawsze wskazywane; użycie poza dyskusją wymaga
+  zgody autora. Outside contributions remain the property of their authors.
 
 Autorska relacja / Authorship chain
 
@@ -43,10 +32,9 @@ Nazewnictwo / Naming
   Soft-Noir                publiczna nazwa design systemu / public name of the design system
   soft-noir, SoftNoir*     identyfikatory techniczne w kodzie — nie są zmieniane
 
-Autorką wymienionych elementów jest Ewa Tchórzewska. Nazwy są oznaczeniami
-Ownera; nie są (jeszcze) zarejestrowanymi znakami towarowymi i nie są
-oznaczane symbolem ®.
+Autorką wymienionych elementów jest Ewa Tchórzewska (Owner). Nazwy są
+oznaczeniami Ownera; nie są (jeszcze) zarejestrowanymi znakami towarowymi
+i nie są oznaczane symbolem ®.
 
-Kod tego repozytorium jest objęty licencją zamkniętą (LICENSE).
-Nie jest udzielana żadna licencja — wyraźna, domniemana ani dorozumiana.
-Wszelkie prawa zastrzeżone.
+Materiały Ownera objęte są licencją zamkniętą (LICENSE). Komponenty osób
+trzecich, jeśli występują, wymienia THIRD_PARTY_NOTICES.md wraz z ich licencjami.

@@ -1,3 +1,6 @@
+
+> **Status licencyjny (12.11.2026).** Zapisy o licencjach otwartych (MIT, Apache-2.0, CC-BY, „open-core” jako licencja) w tym dokumencie są nieaktualne i nie obowiązują. Całość objęta jest licencją zamkniętą: Copyright (c) 2026 Ewa Tchórzewska (osoba fizyczna). Wszelkie prawa zastrzeżone. Podmiot praw: Ewa Tchórzewska (Owner). Zob. `LICENSE` i `NOTICE` w katalogu głównym repozytorium.
+
 > SUPERSEDED — kanoniczna wersja: `RIGHTS.md`; kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # Rights, licenses and provenance

@@ -1,3 +1,6 @@
+
+> **Status licencyjny (12.11.2026).** Zapisy o licencjach otwartych (MIT, Apache-2.0, CC-BY, „open-core” jako licencja) w tym dokumencie są nieaktualne i nie obowiązują. Całość objęta jest licencją zamkniętą: Copyright (c) 2026 Ewa Tchórzewska (osoba fizyczna). Wszelkie prawa zastrzeżone. Podmiot praw: Ewa Tchórzewska (Owner). Zob. `LICENSE` i `NOTICE` w katalogu głównym repozytorium.
+
 > **Status note (2026-11-03, repo tidy):** archival source document (DRAFT, not adopted). Its inline file copies are SUPERSEDED — kanoniczna wersja: the files at the repository root; kept, not deleted (deletion only on Ewa's explicit order); map: `docs/INDEX.md`. Ewa's rights rule (`README.pl.md`) prevails over any CLA/IP wording below; no licence is adopted.
 > Source links/footnotes were stripped when this document was imported, so every external fact in it (papers, arXiv IDs, laws, court cases, dates, funders, programmes, payment providers, platform rules) is [BRAK DOWODU] until a source is opened and checked, whether or not it is marked inline.
 

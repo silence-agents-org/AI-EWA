@@ -109,4 +109,4 @@ We don't claim that. Related work exists (e.g. [arXiv 2311.10054](https://arxiv.
 
 ## Rights
 
-© Ewa Tchórzewska. No licence has been chosen yet, so default copyright applies. See [`RIGHTS.md`](../../RIGHTS.md) and [`NOTICE`](../../NOTICE). This is a research protocol and not a certification of any kind.
+Copyright (c) 2026 Ewa Tchórzewska (osoba fizyczna). Wszelkie prawa zastrzeżone. Rights holder: Ewa Tchórzewska (Owner); closed licence (`LICENSE`). See [`RIGHTS.md`](../../RIGHTS.md) and [`NOTICE`](../../NOTICE). This is a research protocol and not a certification of any kind.
