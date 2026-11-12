@@ -1,3 +1,6 @@
+
+> **Status licencyjny (12.11.2026).** Zapisy o licencjach otwartych (MIT, Apache-2.0, CC-BY, „open-core” jako licencja) w tym dokumencie są nieaktualne i nie obowiązują. Całość objęta jest licencją zamkniętą: Copyright (c) 2026 Ewa Tchórzewska (osoba fizyczna). Wszelkie prawa zastrzeżone. Podmiot praw: Ewa Tchórzewska (Owner). Zob. `LICENSE` i `NOTICE` w katalogu głównym repozytorium.
+
 > SUPERSEDED — kanoniczna wersja: `docs/INDEX.md` (repo-level map; the canonical files now live at the repository root); kept, not deleted (deletion only on Ewa's explicit order); map: docs/INDEX.md.
 
 # Lab package proposal (2026-11-03) — DRAFT
@@ -12,4 +15,4 @@ Status: **DRAFT proposal. Nothing in this directory is active or adopted.**
 - The TRUST-01 harness ships only rule-based agents in tests; no LLM run has been executed and no results exist.
 - No paid GitHub features. Python packaging uses pip/setuptools; JavaScript tooling, if ever added, uses pnpm only.
 
-Copyright holder: Ewa Tchórzewska (natural person).
+Copyright holder: Ewa Tchórzewska (Owner) — Copyright (c) 2026 Ewa Tchórzewska (osoba fizyczna). Wszelkie prawa zastrzeżone.

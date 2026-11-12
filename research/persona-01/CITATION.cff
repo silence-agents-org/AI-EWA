@@ -5,7 +5,8 @@ type: dataset
 authors:
   - family-names: "Tchórzewska"
     given-names: "Ewa"
-# license: pending the owner's decision; default copyright applies (see ../../RIGHTS.md, ../../NOTICE).
+license: proprietary
+# Closed licence (../../LICENSE). Rights holder: Ewa Tchórzewska (Owner). Outside contributors keep rights to their own work (../../RIGHTS.md).
 repository-code: "https://github.com/silence-agents-org/AI-EWA"
 url: "https://github.com/silence-agents-org/AI-EWA/tree/main/research/persona-01"
 version: "1.0.0-proposed"

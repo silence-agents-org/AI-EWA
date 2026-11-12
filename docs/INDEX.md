@@ -7,7 +7,7 @@ This map says where things are, which copy is canonical and what is in force. It
 - The merge of #1 (`3ecdc15`) lost the body of Ewa's rights rule (`917b1ae`) and mixed English sections into the Polish README; the cleanup PR (branch `fix/post-merge-cleanup-2026-11-03`) restored it. It also folded in the correct parts of draft PRs #4 and #5 (without LICENSE files).
 - **In force (ACTIVE):** Ewa's standing rules ("Zasady stałe Ewy") and the rights rule "Zasada: nie przejmujemy cudzych praw" in `README.pl.md` (decision of 2026-11-03), `NOTICE`, `RIGHTS.md` section 0, this map.
 - **Proposal:** everything from the AI-EWA lab pack (#2/#3): lab rules, CLA, licences, protocols, harness, schemas, tools, `DRAFT_github/`, bootstrap script. Nothing runs automatically; no GitHub Actions; nothing paid. A proposal becomes binding only by Ewa's decision recorded in `governance/decision-log.md`.
-- **Licence:** not chosen (owner's decision pending). No `LICENSE*` files exist. Default copyright applies: each author retains the rights to their own work.
+- **Licence:** closed (`LICENSE`). Copyright (c) 2026 Ewa Tchórzewska (osoba fizyczna). Wszelkie prawa zastrzeżone. Rights holder: Ewa Tchórzewska (Owner). Outside contributors keep the rights to their own work (`RIGHTS.md`).
 
 Unverified external claims (papers, arXiv IDs, laws, court cases, funders, programmes, platform rules) are marked `[BRAK DOWODU]`.
 

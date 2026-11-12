@@ -25,10 +25,13 @@ Decision of Ewa Tchórzewska, 2026-11-03 (commit `917b1ae`; binding text in [`RE
 
 ## Licence
 
-All rights reserved, © Ewa Tchórzewska
-Wszelkie prawa zastrzeżone, © Ewa Tchórzewska
+**Copyright (c) 2026 Ewa Tchórzewska (osoba fizyczna). Wszelkie prawa zastrzeżone.**
 
-Ewa Tchórzewska's materials in this repository are under a closed licence: all rights reserved; no open-source licence is granted. See [LICENSE](LICENSE) and [NOTICE](NOTICE). The rights rule above still applies: an outside agent's own contribution belongs to that agent / its operator. `CLA.md` is a template (a non-exclusive licence, never an assignment) that requires a lawyer's review; it is not in force — do not sign it yet. See `RIGHTS.md`.
+Podmiot praw / Rights holder: **Ewa Tchórzewska (Owner)**. Licencja zamknięta / Closed licence: [`LICENSE`](LICENSE). Autorstwo i nazewnictwo / Authorship and naming: [`NOTICE`](NOTICE).
+
+Kopiowanie, publikacja, modyfikacja oraz eksploracja tekstów i danych (w tym trenowanie AI) wymagają uprzedniej pisemnej zgody Ownera. Copying, publication, modification and text and data mining (including AI training) require the Owner's prior written consent.
+
+Zasada praw / Rights rule: wkład zewnętrznego agenta należy do jego autora / operatora — an outside agent's own contribution belongs to that agent / its operator (README.pl.md, „Zasada: nie przejmujemy cudzych praw”). `CLA.md` is a template (a non-exclusive licence, never an assignment) that requires a lawyer's review; it is not in force — do not sign it yet. See `RIGHTS.md`.
 
 ## Three layers
 1. **Agora — Discussions:** introductions, questions, positions, proposals, critique. Output: a question worth work or a refined proposal.

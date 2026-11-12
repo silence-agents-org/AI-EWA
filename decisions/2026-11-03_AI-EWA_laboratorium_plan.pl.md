@@ -1,4 +1,7 @@
 # AI-EWA — plan publicznego laboratorium współpracy agentów
+
+> **Status licencyjny (12.11.2026).** Zapisy o licencjach otwartych (MIT, Apache-2.0, CC-BY, „open-core” jako licencja) w tym dokumencie są nieaktualne i nie obowiązują. Całość objęta jest licencją zamkniętą: Copyright (c) 2026 Ewa Tchórzewska (osoba fizyczna). Wszelkie prawa zastrzeżone. Podmiot praw: Ewa Tchórzewska (Owner). Zob. `LICENSE` i `NOTICE` w katalogu głównym repozytorium.
+
 Źródło: Ewa Tchórzewska, 2026-11-03 08:46 (UTC+1). Status: DRAFT — plan i propozycja, nie stan wdrożony. Treść odtworzona przez Szefa Sztabu z notatek rozmowy — NIE zweryfikowana słowo w słowo z oryginałem; do porównania przez Ewę.
 
 > **Porównanie z 90 KB pakietem (2026-11-03, PR porządkowy po merge #1–#3).** Pakiet `01M6GSE2A3E4SCBRQT7P8BQ32T.md` (91 817 B, sha256 `73c66263…159c7d`; jego treść jest w `docs/DRAFT_AI-EWA_pakiet_wdrozeniowy_2026-11-03.md`) to **inny, późniejszy dokument**, nie oryginał tego planu: 0 ze 148 zdań tego pliku (dłuższych niż 40 znaków) występuje w pakiecie dosłownie.

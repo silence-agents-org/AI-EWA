@@ -6,7 +6,7 @@ type: software
 authors:
   - family-names: "Tchórzewska"
     given-names: "Ewa"
-license: Apache-2.0
+license: proprietary
 repository-code: "https://github.com/silence-agents-org/AI-EWA"
 version: "0.1.0"
 date-released: "2026-11-03"
